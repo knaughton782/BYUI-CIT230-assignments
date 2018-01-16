@@ -11,17 +11,17 @@
 body {
   font-size: 16px;
   line-height: 32px;
-  font-family: ;
-  color: ;
+  font-family: Ubuntu, sans-serif;
+  color: black;
 }
 
 h1 {
-  font-size: ;
-  color: ;
+  font-size: 1.75rem;
+  color: black;
 }
 
 h2 {
-  font-size: ;
+  font-size: 1.2rem;
   text-align: center;
   border-bottom: 1px solid #bbb;
 }
@@ -31,67 +31,23 @@ main,
 footer {
   margin: 1.25rem auto;
   padding: 0.5rem;
-  max-width: ;
+  max-width: 1000px;
 }
 
 header,
 footer,
 footer a {
   text-align: center;
-  background-color: ;
+  background-color: chocolate;
   color: whitesmoke;
 }
 
 header img {
-  width: ;
+  width: 200px;
   height: auto;
   float: right;
 }
 
 footer {
-  font-size: ;
+  font-size: 12px;
 }
-
-/* Example from webpage */
-
-/* * { margin: 0; box-sizing: border-box; }  */
-
-/* body { 
-    font-size: 16px; 
-    line-height: 32px;
-    font-family: /* Ubuntu, sans-serif */
-/*color: /* #xxxxxx */
-/*} */
-
-/* h1 {
-    font-size: /* x.xrem  (rem is a unit of measure) */
-/* color: /* #xxxxxx */
-/* } */
-
-/* h2 {
-    font-size: /* x.xrem */
-/* text-align: center;
-    border-bottom: 1px solid #bbb;
-}  */
-
-/* header, main, footer {
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: /* xxxpx (px = pixel is a unit of measure)  */
-/* }  */
-
-/* header, footer, footer a {
-    text-align: center;
-    background-color: /* */
-/* color: whitesmoke;
-}  */
-
-/* header img {
-    width: /*  */
-/* height: auto;
-    float: right;
-}  */
-
-/* footer {
-    font-size: /* smaller */
-/* }  */
