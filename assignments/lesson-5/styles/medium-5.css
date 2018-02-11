@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37.5em) and (max-width: 1024px) {
+@media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
 
   nav li {

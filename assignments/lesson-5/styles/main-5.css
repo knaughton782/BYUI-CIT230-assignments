@@ -17,6 +17,7 @@ footer {
   /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
   min-width: 375px;
+  max-width: 100%;
 }
 
 header {
@@ -37,10 +38,18 @@ header h1 {
 
 header .subheading {
   display: block;
+  padding: 5px;
+  margin-left: 20%;
 }
 
-/* nav {
-} */
+nav {
+  background-color: #659dbd;
+  color: #fff;
+  margin: auto;
+  display: block;
+  max-width: 100%;
+  padding: 0 10%;
+}
 
 nav button {
   float: right;
@@ -48,13 +57,20 @@ nav button {
 
 nav ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 nav ul li {
+  float: left;
 }
 nav ul li a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
+  display: block;
+  padding: 8px;
+  background-color: #659dbd;
 }
 nav ul li.active a {
 }
@@ -108,9 +124,6 @@ footer > p {
     display: none;
   }
 
-  body {
-    font-size: 0.75em;
-  }
   header .subheading {
     display: none;
   }
