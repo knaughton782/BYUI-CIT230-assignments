@@ -6,8 +6,7 @@
 
 body {
   font-size: 16px;
-
-  font-family: "EB Garamond", Georgia, "Times New Roman", Times, serif;
+  font-family: "EB Garamond", serif;
 }
 
 header,
@@ -16,27 +15,40 @@ main,
 footer {
   /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-  max-width: 600px;
+  min-width: 375px;
 }
 
 header {
   background-color: #fbeec1;
-}
-header h1 {
-  font-family: "Dancing Script", cursive;
-}
-header img {
-}
-header .subheading {
+  padding: 5%;
 }
 
-nav {
+header h1 {
+  font-family: "Dancing Script", cursive;
+  display: inline;
+  position: absolute;
+  top: 2%;
+  left: 20%;
 }
+
+/* header img {
+} */
+
+header .subheading {
+  display: block;
+}
+
+/* nav {
+} */
+
 nav button {
+  float: right;
 }
+
 nav ul {
   list-style-type: none;
 }
+
 nav ul li {
 }
 nav ul li a {
@@ -49,7 +61,9 @@ nav ul li a:hover {
 }
 
 main {
+  padding: 5% 10%;
 }
+
 main h2 {
 }
 main figure {
@@ -70,19 +84,31 @@ article p.town-article img {
 }
 
 footer {
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  background-color: #8d8741;
 }
 footer aside {
+  padding: 2%;
 }
 footer > p {
 } /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
-.logo {
-  margin: 25px;
-}
 
 @media screen and (max-width: 600px) {
   .forecast {
+    display: none;
+  }
+
+  body {
+    font-size: 0.75em;
+  }
+  header .subheading {
+    display: none;
+  }
+  nav li {
     display: none;
   }
 }
