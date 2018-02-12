@@ -23,4 +23,7 @@
     float: right;
   }
   /* responsive images */
+  header img {
+    width: 75px;
+  }
 }
