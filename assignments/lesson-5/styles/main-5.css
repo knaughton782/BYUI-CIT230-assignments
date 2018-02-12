@@ -27,6 +27,7 @@ header {
 
 header h1 {
   font-family: "Dancing Script", cursive;
+  font-size: 2.5em;
   display: inline;
   position: absolute;
   top: 2%;
@@ -96,18 +97,21 @@ main figure img {
 section {
 }
 article {
-  border: 1px solid #daad86;
+  border: 1px solid #8d8741;
+  background-color: #daad86;
 }
 article h3 {
   font-weight: bolder;
+  background-color: #fff;
+  padding: 3px 25px;
 }
 article p.town-article {
-  background-color: #daad86;
+  padding: 3px 25px;
 }
 article p.town-article img {
   /* This structure refers to img elements that are the posterity of paragraph elements within article elements */
   width: 375px; /* fill the page in the small/phone view */
-  margin: ???;
+  margin: 10px;
 }
 
 footer {
@@ -131,6 +135,9 @@ footer > p {
 @media screen and (max-width: 600px) {
   .forecast {
     display: none;
+  }
+  header h1 {
+    font-size: 1.75em;
   }
 
   header img {
