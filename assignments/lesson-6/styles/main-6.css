@@ -38,7 +38,7 @@ header img {
   width: 50px;
 }
 
-header .subheading {
+header.subheading {
   display: block;
   font-size: 1.5em;
   padding: 5px;
@@ -59,32 +59,39 @@ nav {
 
 nav button {
   float: right;
-  margin: 2px;
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
-nav ul li {
-  float: left;
+nav ul.hide {
+  display: none;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
   display: block;
-  padding: 8px;
+  padding: 0.8rem 2%;
   background-color: #659dbd;
-}
-
-nav ul li.active a {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
 }
 
 main {
@@ -158,7 +165,9 @@ footer > p {
   header .subheading {
     display: none;
   }
-  nav li {
-    display: none;
-  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }

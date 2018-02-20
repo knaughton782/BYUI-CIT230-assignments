@@ -7,14 +7,10 @@
     width: 29.333%;
   }
 
-  nav li {
-    display: inline;
-    padding: 8px;
-    background-color: #659dbd;
+  nav ul li a {
+    padding: 0.6rem 1rem;
   }
-  li a {
-    text-decoration: none;
-  }
+
   header img {
     width: 120px;
   }
