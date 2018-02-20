@@ -45,6 +45,7 @@ header .subheading {
   margin-left: 20%;
   margin-top: 5px;
 }
+
 nav {
   background-color: #659dbd;
   color: #fff;
@@ -71,6 +72,7 @@ nav ul {
 nav ul li {
   float: left;
 }
+
 nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -78,8 +80,10 @@ nav ul li a {
   padding: 8px;
   background-color: #659dbd;
 }
+
 nav ul li.active a {
 }
+
 nav ul li a:hover {
 }
 
@@ -94,9 +98,17 @@ main figure {
   margin: 0 0 0.2rem 2%;
   width: 96%;
 }
+
 main figure img {
   width: 100%;
+  margin: 5% 0;
+  float: right;
 }
+
+/* main figure figcaption {
+  text-align: center;
+  font-size: 0.75rem;
+} */
 
 section {
   padding: 0.2rem;
@@ -141,13 +153,6 @@ footer > p {
 @media screen and (max-width: 600px) {
   .forecast {
     display: none;
-  }
-  header h1 {
-    font-size: 1.75em;
-  }
-
-  header img {
-    width: 50px;
   }
 
   header .subheading {

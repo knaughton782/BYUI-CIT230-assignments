@@ -18,6 +18,29 @@
     display: block;
   } /* show the 10-day forecast with the medium view and up */
 
+  /* #forecast {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  #forecast td,
+  #forecast th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  #forecast tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  #forecast tr:hover {
+    background-color: #ddd;
+  }
+  #forecast th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4caf50;
+    color: white;
+  } */
+
   article p.town-article img {
     width: 62.666%;
     float: right;
