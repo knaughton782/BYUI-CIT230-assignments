@@ -10,13 +10,13 @@ body {
   margin-bottom: 120px;
 }
 
+/* the comma means apply the following CSS declarations to all of the listed elements */
 header,
 nav,
 main,
 footer {
-  /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-  min-width: 375px;
+  /* min-width: 375px; */
   max-width: 100%;
 }
 
@@ -34,8 +34,8 @@ header h1 {
   left: 20%;
 }
 
-header img {
-}
+/* header img {
+} */
 
 header .subheading {
   display: block;
@@ -74,10 +74,10 @@ nav ul li a {
   padding: 8px;
   background-color: #659dbd;
 }
-nav ul li.active a {
+/* nav ul li.active a {
 }
 nav ul li a:hover {
-}
+} */
 
 main {
   padding: 5% 10%;
@@ -94,8 +94,8 @@ main figure img {
   width: 100%;
 }
 
-section {
-}
+/* section {
+} */
 article {
   border: 1px solid #8d8741;
   background-color: #daad86;
@@ -127,8 +127,9 @@ footer aside {
   background-color: #bc986a;
   border-bottom: 2px solid #1d6792;
 }
-footer > p {
-} /* This structure refers to p elements that are direct children of the footer element */
+/* This structure refers to p elements that are direct children of the footer element */
+/* footer > p {
+} */
 
 /* Other Class Selectors */
 
