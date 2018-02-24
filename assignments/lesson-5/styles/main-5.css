@@ -110,8 +110,8 @@ article p.town-article {
 }
 article p.town-article img {
   /* This structure refers to img elements that are the posterity of paragraph elements within article elements */
-  width: 375px; /* fill the page in the small/phone view */
-  margin: 10px;
+  width: 100%; /* fill the page in the small/phone view */
+  margin: 5px;
 }
 
 footer {
