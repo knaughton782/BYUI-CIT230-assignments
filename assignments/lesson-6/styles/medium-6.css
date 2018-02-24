@@ -35,9 +35,4 @@
   header img {
     width: 75px;
   }
-  article p.town-article img {
-    /* This structure refers to img elements that are the posterity of paragraph elements within article elements */
-    width: 500px;
-    margin: 10px;
-  }
 }

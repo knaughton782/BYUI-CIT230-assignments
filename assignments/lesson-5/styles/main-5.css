@@ -94,7 +94,8 @@ main figure img {
   width: 100%;
 }
 
-/* section {
+/* section div {
+  
 } */
 article {
   border: 1px solid #8d8741;
@@ -102,7 +103,6 @@ article {
 }
 article h3 {
   font-weight: bolder;
-
   padding: 3px 15px;
 }
 article p.town-article {
