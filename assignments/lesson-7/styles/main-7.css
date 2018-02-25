@@ -112,14 +112,23 @@ main figure img {
   float: right; */
 }
 
-/* main figure figcaption {
+main figure figcaption {
   text-align: center;
-  font-size: 0.75rem;
-} */
+  font-size: 0.5rem;
+}
 
-/* section {
-  padding: 0.2rem;
-} */
+section h3 {
+  background-color: #fbeec1;
+  padding: 1rem;
+}
+
+.current,
+.highlow,
+.conditions,
+.form {
+  display: inline;
+}
+
 article {
   border: 1px solid #8d8741;
   background-color: #659dbd;
@@ -137,6 +146,7 @@ article p.town-article img {
   max-width: 100%; /* fill the page in the small/phone view */
   height: auto;
   margin: 5px;
+  position: relative;
 }
 
 footer {

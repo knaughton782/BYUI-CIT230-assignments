@@ -16,8 +16,10 @@
     font-size: 2em;
     margin: -3% 0 0 20%;
   }
+
   article p.town-article img {
     width: 29.333%;
+    top: 5%;
   }
 
   nav ul li a {

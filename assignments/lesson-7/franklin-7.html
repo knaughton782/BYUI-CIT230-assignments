@@ -15,11 +15,11 @@
   <!-- Google API font reference -->
   <link href="styles/normalize.css" rel="stylesheet" type="text/css">
   <!-- normalize useragent/browser defaults -->
-  <link href="styles/main-6.css" rel="stylesheet" type="text/css">
+  <link href="styles/main-7.css" rel="stylesheet" type="text/css">
   <!-- default styles - small/phone views -->
-  <link href="styles/medium-6.css" rel="stylesheet" type="text/css">
+  <link href="styles/medium-7.css" rel="stylesheet" type="text/css">
   <!-- medium/tablet views -->
-  <link href="styles/large-6.css" rel="stylesheet" type="text/css">
+  <link href="styles/large-7.css" rel="stylesheet" type="text/css">
   <!-- large/wide/desktop views -->
 </head>
 
@@ -52,7 +52,7 @@
         <a href="#">Storm Center</a>
       </li>
       <li>
-        <a href="#">Gallery</a>
+        <a href="gallery-7.html">Gallery</a>
       </li>
     </ul>
   </nav>
@@ -60,7 +60,7 @@
   <main>
     <h2>The City of Franklin</h2>
     <figure class="franklinPic">
-      <img src="images/franklin-1200.jpeg" alt="Franklin City" sizes="100vw" srcset="images/franklin-300.jpeg 300w, images/franklin-600.jpeg 600w, images/franklin-900.jpeg 900w, images/franklin-1200.jpeg 1200w">
+      <img src="images/franklin-1200.jpeg" alt="Franklin City" sizes="100vw" srcset="images/franklin-300.jpeg 400w, images/franklin-600.jpeg 600w, images/franklin-900.jpeg 900w, images/franklin-1200.jpeg 1200w">
 
       <figcaption>A Sunny Day in Franklin City</figcaption>
     </figure>
@@ -71,14 +71,18 @@
         <p>Low: 66&#8457;</p>
       </div>
       <div class="current">
-        Sunny:
+        <p>Sunny:</p>
         <picture>
-          <img src="images/cartoon-sun-vector.jpg" alt="Sunny Day" width="50">
+          <img src="images/cartoon-sun-vector.jpg" alt="Sunny Day">
         </picture>
       </div>
       <div class="conditions">
         <p>Precipitation: 0&percnt;</p>
         <p>Wind Speed: 5 mpg SW</p>
+      </div>
+      <div class="form">
+        <p id="windchill">Windchill:
+        </p>
       </div>
     </section>
 
@@ -116,14 +120,18 @@
       </table>
     </section>
 
-    <article>
+    <article class="container">
       <h3>Franklin Weather Breaks Record</h3>
+
       <p class="town-article">
+
         <img src="images/spring_nature-1041365.jpg" alt="Spring flowers">
+
         <br>While its only February, the weather in the city of Franklin has the residents thinking that spring has arrived.
         <br>
         <br>Record breaking temperatures have the citizens out in the warm days enjoying the unexpected sunshine.
       </p>
+
     </article>
 
   </main>
@@ -139,6 +147,7 @@
 
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentDate.js"></script>
+  <script src="windchill.js"></script>
 
 </body>
 
