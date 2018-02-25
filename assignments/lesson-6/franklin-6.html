@@ -13,13 +13,13 @@
 
 
   <!-- Google API font reference -->
-  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="styles/normalize.css" rel="stylesheet" type="text/css">
   <!-- normalize useragent/browser defaults -->
-  <link href="styles/main-6.css" rel="stylesheet">
+  <link href="styles/main-6.css" rel="stylesheet" type="text/css">
   <!-- default styles - small/phone views -->
-  <link href="styles/medium-6.css" rel="stylesheet">
+  <link href="styles/medium-6.css" rel="stylesheet" type="text/css">
   <!-- medium/tablet views -->
-  <link href="styles/large-6.css" rel="stylesheet">
+  <link href="styles/large-6.css" rel="stylesheet" type="text/css">
   <!-- large/wide/desktop views -->
 </head>
 
@@ -27,12 +27,13 @@
 
   <header>
     <img src="images/wind-logo.png" alt="The site logo">
-    <h1>Franklin Area Weather</h1>
+    <h1>Franklin
+      <span class="hide">Area</span> Weather</h1>
     <div class="subheading">Weather when YOU want it!</div>
   </header>
 
-  <!-- site navigation use placeholder references -->
-  <nav class='clearfix'>
+  <!-- site navigation -->
+  <nav class="clearfix">
     <button onclick="toggleNavMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
       <li>
@@ -71,7 +72,7 @@
       <div class="current">
         Sunny:
         <picture>
-          <img src="images/cartoon-sun-vector.jpg" alt="Sunny Day" width="50px;" height="">
+          <img src="images/cartoon-sun-vector.jpg" alt="Sunny Day" width="50">
         </picture>
       </div>
       <div class="conditions">

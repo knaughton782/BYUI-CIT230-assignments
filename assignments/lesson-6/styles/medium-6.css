@@ -2,26 +2,30 @@
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
 
   header h1 {
-    font-size: 3.5em;
+    font-size: 3em;
+    top: 1%;
   }
-  header .subheading {
-    display: block;
+  .subheading {
     font-size: 1.5em;
-    margin-top: 10px;
-  }
-
-  nav li {
-    display: inline;
-    padding: 5px;
-    background-color: #659dbd;
-    text-decoration: none;
-  }
-  nav li a {
-    text-decoration: none;
   }
   nav button {
     display: none;
   } /* hamburger button does not need to be shown */
+
+  nav ul.hide {
+    display: block;
+  }
+  nav ul {
+    margin-left: 2%;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.8rem 1rem;
+  }
 
   section.forecast {
     display: block;
@@ -29,10 +33,12 @@
 
   article p.town-article img {
     width: 62.666%;
+    height: auto;
     float: right;
   }
   /* responsive images */
   header img {
     width: 75px;
+    height: auto;
   }
 }

@@ -92,6 +92,7 @@ main figure {
 }
 main figure img {
   width: 100%;
+  height: auto;
 }
 
 /* section div {
@@ -111,6 +112,7 @@ article p.town-article {
 article p.town-article img {
   /* This structure refers to img elements that are the posterity of paragraph elements within article elements */
   width: 100%; /* fill the page in the small/phone view */
+  height: auto;
   margin: 5px;
 }
 
@@ -121,6 +123,7 @@ footer {
   background-color: #8d8741;
   margin: auto;
   width: 100%;
+  height: auto;
 }
 footer aside {
   padding: 2%;
@@ -143,6 +146,7 @@ footer aside {
 
   header img {
     width: 50px;
+    height: auto;
   }
 
   header .subheading {
