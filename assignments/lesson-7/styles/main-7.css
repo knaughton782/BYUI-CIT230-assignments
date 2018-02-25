@@ -122,8 +122,8 @@ section h3 {
   padding: 1rem;
 }
 button {
-  border: 1px solid grey;
-  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
 }
 .current,
 .highlow,
@@ -135,6 +135,7 @@ button {
 article {
   border: 1px solid #8d8741;
   background-color: #659dbd;
+  padding-bottom: 120px;
   margin-bottom: 125px;
 }
 article h3 {
