@@ -121,7 +121,10 @@ section h3 {
   background-color: #fbeec1;
   padding: 1rem;
 }
-
+button {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
 .current,
 .highlow,
 .conditions,

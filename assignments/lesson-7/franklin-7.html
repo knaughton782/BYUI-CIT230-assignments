@@ -67,8 +67,10 @@
     <section>
       <h3>Weather Summary for Today</h3>
       <div class="highlow">
-        <p>High: 90&#8457;</p>
-        <p>Low: 66&#8457;</p>
+        <p>High:
+          <span id="high">90</span>&#8457;</p>
+        <p>Low:
+          <span id="low">66</span>&#8457;</p>
       </div>
       <div class="current">
         <p>Sunny:</p>
@@ -78,11 +80,12 @@
       </div>
       <div class="conditions">
         <p>Precipitation: 0&percnt;</p>
-        <p>Wind Speed: 5 mpg SW</p>
+        <p>Wind Speed:
+          <span id="speed">5</span> mpg SW</p>
       </div>
       <div class="form">
-        <p id="windchill">Windchill:
-        </p>
+        <button type="button" onclick="windChill()">Calculate Wind Chill</button>
+        <p id="windchill"></p>
       </div>
     </section>
 
@@ -147,7 +150,7 @@
 
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentDate.js"></script>
-  <script src="windchill.js"></script>
+  <script src="scripts/windChill.js"></script>
 
 </body>
 
