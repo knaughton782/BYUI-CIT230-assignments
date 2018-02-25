@@ -14,7 +14,7 @@ function windChill() {
   var calcWindChill = windChillFunc(t, s);
 
   document.getElementById("windchill").innerHTML =
-    "Windchill: " + calcWindChill.toFixed(2);
+    "WindChill: " + calcWindChill.toFixed(2) + "&#8457;";
 
   function windChillFunc() {
     return (
