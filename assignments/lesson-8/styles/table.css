@@ -1,0 +1,6 @@
+/* Color scheme includes #e7f0ed, #e7ffed (data rows) and #628ca6, #7fb9c2 with white and black.
+You may find the first-child and nth:child() pseudo classes helpful in CSS. You may use ONE class selector. Send to github and post url to table page in discussion board */
+
+table {
+  font-family: Ubuntu, sans-serif;
+}
