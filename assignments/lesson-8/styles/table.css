@@ -1,6 +1,41 @@
 /* Color scheme includes #e7f0ed, #e7ffed (data rows) and #628ca6, #7fb9c2 with white and black.
 You may find the first-child and nth:child() pseudo classes helpful in CSS. You may use ONE class selector. Send to github and post url to table page in discussion board */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 table {
-  font-family: Ubuntu, sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  margin: 25% auto;
+  text-align: center;
+}
+
+table, thead, tbody, tr, th, td, tfoot {
+  border: 1px solid #888; 
+  border-collapse: collapse;
+}
+
+thead, tfoot {
+  color: black;
+  background-color: #7fb9c2;
+}
+th {
+  color: white;
+  background-color:  #628ca6;
+}
+
+tr:nth-child(even) {
+background-color: #e7f0ed;
+}
+
+tr:nth-child(odd) {
+  background-color: #e7ffed;
+  }
+
+th, td {
+
+  
 }
