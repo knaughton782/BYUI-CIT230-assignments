@@ -11,31 +11,36 @@ table {
   font-family: "Ubuntu", sans-serif;
   margin: 25% auto;
   text-align: center;
+  box-shadow: 8px 8px 16px #628ca6;
 }
 
 table, thead, tbody, tr, th, td, tfoot {
-  border: 1px solid #888; 
+  border: 0.5px solid #c5d3c8; 
   border-collapse: collapse;
+  padding: 8px 10px;
 }
 
 caption {
   background-color: #7fb9c2;
   font-size: 22px;
   font-weight: bolder;
+  padding: 7px 10px;
+  box-shadow: 8px 8px 16px #628ca6;
 }
 
 
 th {
   color: white;
   background-color:  #628ca6;
+  font-weight: bolder;
 }
 
 tr:nth-child(even) {
-background-color: #e7f0ed;
+background-color:  #e7ffed;
 }
 
 tr:nth-child(odd) {
-  background-color: #e7ffed;
+  background-color: #e7f0ed;
   }
 
 th, td {
@@ -45,5 +50,5 @@ th, td {
 tfoot tr td {
   color: black;
 background-color: #7fb9c2;
-font-size: 10px;
+font-size: 11px;
 }
