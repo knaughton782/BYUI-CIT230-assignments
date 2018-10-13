@@ -1,1 +1,59 @@
+/* google font: font-family: 'Open Sans', sans-serif; */
 /* google font: font-family: 'Niramit', sans-serif; */
+
+body {
+    font-size: 18px;
+    font-family:  "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: #00A2AD;
+    text-align: center;
+    padding: .5rem;
+    color: #F9F7F6;
+}
+
+header > img {
+    width: 100px;
+    vertical-align: middle;
+     margin: 1rem 5rem 1rem 0;
+}
+
+.headerText {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headerText h1 {
+    font-size: 2rem;
+    color: #F9F7F6;
+    text-shadow: 2px 2px 5px #231F20;
+}
+
+.subheading {
+    font-size: 1.1rem;
+    color: #F9F7F6;
+    font-style: italic;
+}
+
+.currentConditions {
+    display: inline-block;
+    margin: 1rem 0 1rem 5rem;
+    padding: 1rem;
+    vertical-align: middle;
+    color: #F9F7F6;
+    background-color: rgba(1, 70, 86, .8);
+    border: 1pt solid #014656;
+    font-size: 1rem;
+    box-shadow: 2px 2px 5px #231F20;
+}
+
+.currentConditions > img {
+    width: 70px;
+    vertical-align: middle;
+    padding-right: 1rem;
+}
+
+.currentConditions > p {
+    display: inline-block;
+}
