@@ -4,6 +4,7 @@
 body {
     font-size: 18px;
     font-family:  "Open Sans", Helvetica, Arial, sans-serif;
+    margin: 0;
 }
 
 header {
@@ -35,8 +36,8 @@ nav {
     background-color: rgb(1, 70, 86);
     padding: 10px;
     text-align: center;
-    border-top: 2px solid rgb(1, 47, 58);
-    border-bottom: 2px solid rgb(1, 47, 58);
+    border-top: 2px solid #f6a801;
+    border-bottom: 2px solid #f6a801;
     
 }
 
@@ -51,10 +52,35 @@ nav a {
 }
 
 .heroImage {
-    width: ;
-    height: ;
-    background-image: url('');  
+    border-top: 3px solid rgb(1, 70, 86);
+    border-bottom: 3px solid rgb(1, 70, 86);
+    height: 500px;
+      
 }
+
+.weatherSummary {
+        background-color: rgba(1, 70, 86, .95); 
+        color: #fff;
+        width: 200px;
+        margin-left: 100px;
+        margin-top: 75px;
+        padding: 8px;
+        position: relative;
+    }
+
+    .detailsLabel {
+        display: inline-block;
+        color: #fff;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .detailsCondition {
+        display: inline-block;
+        color: #fdd65d;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
 
 .currentConditions {
     display: inline-block;

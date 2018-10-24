@@ -9,8 +9,7 @@
     }
 
      header > img {
-        width: 50px;
-        
+        width: 75px; 
     }
 
     nav li {
@@ -24,6 +23,32 @@
     background-image: url('../images/main-street-sm.jpg');
     background-repeat: no-repeat;
    
-}
+    }
 
+    .fiveDayForecast {
+        display: none;
+    }
+
+    .weatherSummary {
+        background-color: rgba(1, 70, 86, .95); 
+        color: #fff;
+        width: 200px;
+        margin-left: 20px;
+        margin-top: 10px;
+        padding: 8px;
+    }
+
+    .detailsLabel {
+        display: inline-block;
+        color: #fff;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .detailsCondition {
+        display: inline-block;
+        color: #fdd65d;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
 }
