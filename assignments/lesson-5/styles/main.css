@@ -11,6 +11,7 @@ header {
     text-align: center;
     padding: .5rem;
     color: #F9F7F6;
+    border-top: 3px solid rgb(1, 70, 86);
 }
 
 header > img {
@@ -34,6 +35,9 @@ nav {
     background-color: rgb(1, 70, 86);
     padding: 10px;
     text-align: center;
+    border-top: 2px solid rgb(1, 47, 58);
+    border-bottom: 2px solid rgb(1, 47, 58);
+    
 }
 
 nav a {
@@ -44,6 +48,12 @@ nav a {
     font-size: 1.1rem;
     color: #F9F7F6;
     font-style: italic;
+}
+
+.heroImage {
+    width: ;
+    height: ;
+    background-image: url('');  
 }
 
 .currentConditions {

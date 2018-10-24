@@ -4,5 +4,26 @@
         display: none;
     }
 
+    ul {
+        list-style-type: none;
+    }
+
+     header > img {
+        width: 50px;
+        
+    }
+
+    nav li {
+        display: none;
+
+    }
+
+    .heroImage {
+    width: auto;
+    height: 350px;
+    background-image: url('../images/main-street-sm.jpg');
+    background-repeat: no-repeat;
+   
+}
 
 }
