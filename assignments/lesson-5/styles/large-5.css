@@ -24,7 +24,11 @@
     background-image: url('../images/main-street-large.jpg');
     background-repeat: no-repeat;
    
-}
+    }
+
+    .fiveDayForecast {
+        display: none;
+    }
 
 
 }

@@ -18,7 +18,7 @@ header {
 header > img {
     width: 100px;
     vertical-align: middle;
-     margin: 1rem 5rem 1rem 0;
+    margin: 1rem 5rem 1rem 0;
 }
 
 .headerText {
@@ -77,7 +77,7 @@ nav a {
 
     .detailsCondition {
         display: inline-block;
-        color: #fdd65d;
+        color: #fae29a;
         margin-top: 3px;
         margin-bottom: 3px;
     }
@@ -106,4 +106,25 @@ nav a {
 
 .townName {
     text-align: center;
+}
+
+article {
+    background-color: #fae29a;
+    margin: 25px;
+    padding: 25px;
+    border: 2px solid #f6a801;
+}
+
+footer {
+    background-color: #00A2AD;
+    border-top: 3px solid rgb(1, 70, 86);
+}
+
+footer > div.footerBar {
+    background-color: rgb(1, 70, 86);
+    height: 25px;
+}
+
+address {
+    padding: 25px;
 }
