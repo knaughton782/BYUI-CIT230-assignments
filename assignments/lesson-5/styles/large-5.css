@@ -25,6 +25,10 @@
     background-repeat: no-repeat;
    
     }
+     article > div {
+        float: right;
+        margin-left: 10px;
+    }
 
     .fiveDayForecast {
         background-color: rgba(1, 70, 86, .7);
