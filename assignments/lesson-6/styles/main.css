@@ -97,22 +97,24 @@ main {
     font-style: italic;
 }
 
-.heroImage {
-    /* border-top: 3px solid rgb(1, 70, 86);
-    border-bottom: 3px solid rgb(1, 70, 86); */
+.heroImageArea {
     border-top: 3px solid rgb(0, 46, 91);
     border-bottom: 3px solid rgb(0, 46, 91);
-    height: 500px;
+    position: relative;
+}
+
+.heroImage {
+    margin: auto;
 }
 
 .weatherSummary {
     background-color: rgba(0, 46, 91, .9);
     color: #fff;
     width: 200px;
-    margin-left: 100px;
-    margin-top: 75px;
     padding: 8px;
-    position: relative;
+    position: absolute;
+    left: 30px;
+    top: 50px;
 }
 
 .detailsLabel {

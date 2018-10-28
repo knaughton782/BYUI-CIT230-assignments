@@ -39,12 +39,15 @@
 
     /**************** MAIN ******************/
 
-    .heroImage {
-        width: auto;
-        height: 350px;
-        background-image: url('../images/main-street-sm.jpg');
-        background-repeat: no-repeat;
+    .heroImageArea {
+        width: 100%;
+        /*height: 350px;*/
+        /*background-image: url('../images/main-street-sm.jpg');
+        background-repeat: no-repeat;*/
+    }
 
+    .heroImage {
+        width: 100%;
     }
 
     .fiveDayForecast {
@@ -52,8 +55,7 @@
     }
 
     .weatherSummary {
-        margin-left: 30px;
-        margin-top: 10px;
+        top: 20px;
         padding: 8px;
     }
 

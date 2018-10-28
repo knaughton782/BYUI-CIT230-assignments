@@ -21,11 +21,11 @@
     /********* SM NAVIGATION *************/
 
 
-    div.heroImage {
+    div.heroImageArea {
         margin: auto;
-        /* width: 95%; */
-        background-image: url('../images/main-street-large.jpg');
-        background-repeat: no-repeat;
+        /*width: 95%;*/
+        /* background-image: url('../images/main-street-large.jpg');
+ background-repeat: no-repeat;*/
         background-color: #002e5b;
     }
 
