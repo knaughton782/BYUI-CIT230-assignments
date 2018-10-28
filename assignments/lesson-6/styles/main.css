@@ -8,13 +8,15 @@
 
 body {
     font-size: 18px;
-    font-family:  "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     margin: 0;
 }
 
+/********** HEADER *************/
+
 header {
     /* background-color: rgba(0, 162, 173, .5); */
-    background-color: rgba(45, 92, 142, .8); 
+    background-color: rgba(45, 92, 142, .8);
     text-align: center;
     padding: .5rem;
     color: #F9F7F6;
@@ -22,7 +24,7 @@ header {
     border-top: 3px solid #ffc55b;
 }
 
-header > img {
+header>img {
     width: 100px;
     vertical-align: middle;
     margin: 1rem 5rem 1rem 0;
@@ -39,6 +41,8 @@ header > img {
     text-shadow: 2px 2px 5px #231F20;
 }
 
+/********* NAVIGATION *************/
+
 nav {
     /* background-color: rgb(1, 70, 86); */
     background-color: #002e5b;
@@ -48,16 +52,45 @@ nav {
     /* border-bottom: 2px solid #f6a801; */
     border-top: 2px solid #ffc55b;
     border-bottom: 2px solid #ffc55b;
-    
+
 }
 
 nav a {
     color: #F9F7F6;
+    text-decoration: none;
 }
 
+.topnav .icon {
+    display: none;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+    color: #2d5c8e;
+}
+
+
+/***************** MAIN *******************/
 main {
     border-top: 3px solid #002e5b;
 }
+
 .subheading {
     font-size: 1.1rem;
     color: #F9F7F6;
@@ -73,28 +106,28 @@ main {
 }
 
 .weatherSummary {
-        background-color: rgba(0, 46, 91, .9); 
-        color: #fff;
-        width: 200px;
-        margin-left: 100px;
-        margin-top: 75px;
-        padding: 8px;
-        position: relative;
-    }
+    background-color: rgba(0, 46, 91, .9);
+    color: #fff;
+    width: 200px;
+    margin-left: 100px;
+    margin-top: 75px;
+    padding: 8px;
+    position: relative;
+}
 
-    .detailsLabel {
-        display: inline-block;
-        color: #fff;
-        margin-top: 3px;
-        margin-bottom: 3px;
-    }
+.detailsLabel {
+    display: inline-block;
+    color: #fff;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
 
-    .detailsCondition {
-        display: inline-block;
-        color: #ffc55b;
-        margin-top: 3px;
-        margin-bottom: 3px;
-    }
+.detailsCondition {
+    display: inline-block;
+    color: #ffc55b;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
 
 .currentConditions {
     display: inline-block;
@@ -108,13 +141,13 @@ main {
     box-shadow: 2px 2px 5px #231F20;
 }
 
-.currentConditions > img {
+.currentConditions>img {
     width: 70px;
     vertical-align: middle;
     padding-right: 1rem;
 }
 
-.currentConditions > p {
+.currentConditions>p {
     display: inline-block;
 }
 
@@ -131,12 +164,12 @@ article {
 
 footer {
     /* background-color: rgba(0, 162, 173, .5); */
-    background-color: rgba(45, 92, 142, .8); 
+    background-color: rgba(45, 92, 142, .8);
     /* border-top: 3px solid rgb(1, 70, 86); */
     border-top: 3px solid #002e5b;
 }
 
-footer > div.footerBar {
+footer>div.footerBar {
     /* background-color: rgb(1, 70, 86); */
     background-color: #002e5b;
     border-top: 3px solid #ffc55b;
@@ -147,10 +180,10 @@ footer > div.footerBar {
     padding: 10px;
 }
 
-address {
+footer>div {
     padding: 25px;
 }
 
 img.map {
-        margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
+}

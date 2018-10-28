@@ -6,23 +6,45 @@
 
     ul {
         list-style-type: none;
+        margin: 0;
+        padding: 0;
+
     }
 
-     header > img {
-        width: 75px; 
+    header>img {
+        width: 75px;
     }
 
-    nav li {
+    .topnav a {
         display: none;
 
     }
 
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive a.icon {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    /**************** MAIN ******************/
+
     .heroImage {
-    width: auto;
-    height: 350px;
-    background-image: url('../images/main-street-sm.jpg');
-    background-repeat: no-repeat;
-   
+        width: auto;
+        height: 350px;
+        background-image: url('../images/main-street-sm.jpg');
+        background-repeat: no-repeat;
+
     }
 
     .fiveDayForecast {
@@ -42,11 +64,11 @@
         margin-bottom: 3px;
     }
 
-    article > div {
+    article>div {
         margin: auto;
     }
 
-    div > img {
+    div>img {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -57,11 +79,11 @@
         text-align: center;
     }
 
-    footer > div {
+    footer>div {
         margin: auto;
     }
 
-    
+
 
 
 }
