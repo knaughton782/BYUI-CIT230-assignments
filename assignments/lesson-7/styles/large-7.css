@@ -1,0 +1,67 @@
+@media (min-width: 992px) {
+
+
+    /********* NAVIGATION *************/
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    /********* SM NAVIGATION *************/
+
+
+    div.heroImageArea {
+        margin: auto;
+        /*width: 95%;*/
+        /* background-image: url('../images/main-street-large.jpg');
+ background-repeat: no-repeat;*/
+        background-color: #002e5b;
+    }
+
+    article>div {
+        float: right;
+        margin-left: 10px;
+    }
+
+    .fiveDayForecast {
+        /* background-color: rgba(1, 70, 86, .7); */
+        background-color: rgba(45, 92, 142, .8);
+        margin: 25px;
+        padding: 15px;
+        color: #fff;
+    }
+
+    table {
+        margin: auto;
+    }
+
+    th,
+    td {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #fff;
+    }
+
+    img.map {
+        margin-left: 25px;
+        /* margin-top: 25px; */
+    }
+
+    address {
+        float: right;
+        margin-right: 25px;
+    }
+
+
+}
