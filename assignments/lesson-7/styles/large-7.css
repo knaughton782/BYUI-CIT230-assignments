@@ -1,4 +1,4 @@
-@media (min-width: 992px) {
+@media (min-width: 64em) {
 
 
     /********* NAVIGATION *************/
@@ -41,6 +41,19 @@
         padding: 15px;
         color: #fff;
     }
+
+    /************* GRID  **************/
+
+    .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  
+}
+.grid-item:hover {
+   box-shadow: 5px 5px 10px #666666;
+}
+/***************************************/
+
 
     table {
         margin: auto;

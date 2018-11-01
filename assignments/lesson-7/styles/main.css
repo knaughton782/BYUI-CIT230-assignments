@@ -1,11 +1,6 @@
 /* google font: font-family: 'Open Sans', sans-serif; */
 /* google font: font-family: 'Niramit', sans-serif; */
 
-/* #00A2AD Teal OR rgba(0, 162, 173, .5);*/
-/* rgb(1, 70, 86); Dk Teal */
-/* #f6a801; Dk Yellow Border */
-
-
 body {
     font-size: 18px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -15,24 +10,21 @@ body {
 /********** HEADER *************/
 
 header {
-    /* background-color: rgba(0, 162, 173, .5); */
+    display: flex;
+    justify-content: space-evenly;
     background-color: rgba(45, 92, 142, .8);
-    text-align: center;
-    padding: .5rem;
+    /* text-align: center; */
+    /* padding: .5rem; */
     color: #F9F7F6;
-    /* border-top: 3px solid rgb(1, 70, 86);  */
     border-top: 3px solid #ffc55b;
 }
 
 header>img {
-    width: 100px;
-    vertical-align: middle;
-    margin: 1rem 5rem 1rem 0;
+    margin: 2rem 1rem;
 }
 
 .headerText {
-    display: inline-block;
-    vertical-align: middle;
+    padding-top: 1rem;
 }
 
 .headerText h1 {
@@ -41,23 +33,65 @@ header>img {
     text-shadow: 2px 2px 5px #231F20;
 }
 
+.subheading {
+    display: flex;
+    font-size: 1.1rem;
+    color: #F9F7F6;
+    font-style: italic;
+    justify-content: center;
+}
+
+.currentConditions {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0 1rem 5rem;
+    padding: 1rem;
+    color: #F9F7F6;
+    background-color: rgba(0, 46, 91, .9);
+    border: 1pt solid rgb(0, 37, 75);
+    font-size: 1rem;
+    box-shadow: 2px 2px 5px #231F20;
+}
+
+.currentConditions>img {
+    padding-right: 1rem;
+}
+
+.currentConditions>p {
+    padding: .5rem 1rem 0 0;
+}
+
+
 /********* NAVIGATION *************/
 
 nav {
-    /* background-color: rgb(1, 70, 86); */
+    display: flex;
+    justify-content: center;
     background-color: #002e5b;
-    padding: 10px;
-    text-align: center;
-    /* border-top: 2px solid #f6a801; */
-    /* border-bottom: 2px solid #f6a801; */
     border-top: 2px solid #ffc55b;
     border-bottom: 2px solid #ffc55b;
-
 }
 
-nav a {
-    color: #F9F7F6;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
     text-decoration: none;
+} 
+
+nav a {
+    text-decoration: none;
+}
+
+.icon {
+    color: #fff;
+}
+
+nav a:visited {
+    color: #ddd;
 }
 
 .topnav .icon {
@@ -70,31 +104,29 @@ nav a {
 
 .topnav a {
     float: left;
-    display: block;
     color: #fff;
-    text-align: center;
     text-decoration: none;
     font-size: 17px;
     padding: 14px 16px;
+    
 }
 
 /* Change the color of links on hover */
+.topnav a:visited {
+    color: #fdfdfd;
+}
+
 .topnav a:hover {
     background-color: #ddd;
     border-radius: 5px;
     color: #2d5c8e;
+    padding: 14px 16px;
+   
 }
-
 
 /***************** MAIN *******************/
 main {
     border-top: 3px solid #002e5b;
-}
-
-.subheading {
-    font-size: 1.1rem;
-    color: #F9F7F6;
-    font-style: italic;
 }
 
 .heroImageArea {
@@ -131,28 +163,6 @@ main {
     margin-bottom: 3px;
 }
 
-.currentConditions {
-    display: inline-block;
-    margin: 1rem 0 1rem 5rem;
-    padding: 1rem;
-    vertical-align: middle;
-    color: #F9F7F6;
-    background-color: rgba(0, 46, 91, .9);
-    border: 1pt solid rgb(0, 37, 75);
-    font-size: 1rem;
-    box-shadow: 2px 2px 5px #231F20;
-}
-
-.currentConditions>img {
-    width: 70px;
-    vertical-align: middle;
-    padding-right: 1rem;
-}
-
-.currentConditions>p {
-    display: inline-block;
-}
-
 .townName {
     text-align: center;
 }
@@ -163,6 +173,33 @@ article {
     padding: 25px;
     border: 2px solid #ffc55b;
 }
+
+/************ GRID - General Info *************/
+
+ .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin: 15px;
+    justify-content: space-around;
+}
+
+
+figure {
+    margin: 0;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    text-align: center;
+    object-fit: cover;
+}
+
+figcaption {
+    font-size: small;
+    text-align: center;
+}
+
+/************ FOOTER ************/
 
 footer {
     /* background-color: rgba(0, 162, 173, .5); */
