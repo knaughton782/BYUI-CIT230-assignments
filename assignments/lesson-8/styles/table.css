@@ -51,6 +51,10 @@ tr:nth-child(4) td:nth-child(3) {
     background-color:  #628ca6;
 }
 
+.special {
+    font-style: italic;
+}
+
 tfoot tr td {
     color: black;
     background-color: #7fb9c2;
