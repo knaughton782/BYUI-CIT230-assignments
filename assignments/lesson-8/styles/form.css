@@ -1,0 +1,31 @@
+.form {
+    margin: 2%;
+}
+
+form input {
+    height: 44px;
+    margin: 10px;
+    width: 300px;
+    max-width: 100em;
+    border-radius: 5px;
+}
+
+fieldset {
+    max-width: 520px;
+    margin: 20px 10px;
+    border-radius: 5px;
+}
+
+.button {
+    margin: 20px;
+    background-color: #ffc55b;
+    border: 1px solid #fcb93e;
+}
+
+.thankYou {
+    text-align: center;
+    margin: 50px auto 100px;
+    max-width: 500px;
+    color: #002e5b;
+    line-height: 150%;
+}
