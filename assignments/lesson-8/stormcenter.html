@@ -36,7 +36,7 @@
             <li><a href="./preston-8.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">The Storm Center</a></li>
+            <li><a href="./stormcenter.html">The Storm Center</a></li>
             <li><a href="./gallery-8.html">Gallery</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a></li>
         </ul>
@@ -52,25 +52,37 @@
             <form action="thanks.html" method="GET">
                 <fieldset>
                     <legend>User Information:</legend>
-
-                    <label>Full Name:* <input type="text" pattern="/^[A-Z]+$/i" required></label><br>
-                    <label> Email Address: <input type="email" placeholder="email@email.com"></label><br>
-                    <label>Phone Number:* <input type="tel" required></label><br>
-                    <label>Zip Code:* <input type="number" required></label><br>
+                    <label>First Name:* <input type="text" pattern="([A-Z][a-zA-Z]*)" name='fname' required></label><br>
+                    <label>Last Name:* <input type="text" pattern="([A-Z][a-zA-Z]*)" name='lname' required></label><br>
+                    <label> Email Address: <input type="email" placeholder="email@email.com" name="email"></label><br>
+                    <label>Phone Number:* <input type="tel" required name="phone" placeholder="1234445252"></label><br>
+                    <label>Zip Code:* <input type="number" name='zip' required></label><br>
                 </fieldset>
+
                 <fieldset>
                     <legend> Storm Information: </legend>
-                    <label> Storm Date: <input type="date"></label><br>
-                    <label> Storm Type: <input type="list"></label><br>
-                    <label>Storm Severity: <input type="range"></label><br>
-                    <label>Storm Region: <input type="select"></label><br>
-                    <label>User in-danger: <input type="radio"></label>
+                    <label> Storm Date: <input type="date" name="stormDate"></label><br>
+                    <label> Storm Type: <input type="list" name='stormType'></label><br>
+                    <label>Storm Severity: <input type="range" name='stormSeverity'></label><br>
+
+                    <label>Storm Region:
+                        <select name="region">
+                            <option>Select Area:</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodaSprings">Soda Springs</option>
+                            <option value="fishHaven">Fish Haven</option>
+                    </label>
+
+                    <div class="danger">User in-danger:</div>
+                    <label><input type="radio" name='dangerLevel' value="yes">Yes</label><br>
+                    <label><input type="radio" name='dangerLevel' value="maybe">Maybe</label><br>
+                    <label><input type="radio" name='dangerLevel' value="no">No</label><br>
+
                 </fieldset>
                 <fieldset>
                     <legend>Additional Information:</legend>
                     <label>
-                        <input type="textarea">
-
+                        <textarea rows="10" cols="30" name="additionalInfo"></textarea>
                     </label><br>
                 </fieldset>
                 <input type="submit" value="Share My Weather" class="button">
