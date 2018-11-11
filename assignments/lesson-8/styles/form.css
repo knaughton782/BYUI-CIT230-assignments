@@ -12,12 +12,14 @@ form input {
 
 .danger {
     margin: 5px;
+    width: 50px;
 }
 
 textarea {
     margin: 20px;
     border-radius: 5px;
 }
+
 fieldset {
     max-width: 520px;
     margin: 20px 10px;
