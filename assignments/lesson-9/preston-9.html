@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Page - Preston Idaho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather site for a geographical area in Idaho including the towns Preston, Soda Springs, and Fish Haven">
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/small-9.css">
+    <link rel="stylesheet" href="./styles/medium-9.css">
+    <link rel="stylesheet" href="./styles/large-9.css">
+</head>
+
+<body>
+    <!--CSS FLEX REQUIRED FOR HEADER AND NAV-->
+    <header>
+        <img src="./images/sun.png" alt="The Weather Update Logo">
+        <div class="headerText">
+            <h1>The Weather Update</h1>
+            <div class="subheading">Weather when YOU want it!</div>
+        </div>
+        <div class="currentConditions">
+            <img src="./images/cloud.png" alt="Current Condition Icon">
+            <p>Currently:<br>Light Rain</p>
+        </div>
+
+    </header>
+    <nav class="topnav" id="responsive">
+        <ul>
+            <li><a href=".#">Home</a></li>
+            <li><a href="./preston-9.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="./stormcenter.html">The Storm Center</a></li>
+            <li><a href="./gallery-9.html">Gallery</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2 class="townName">The Town of Preston</h2>
+            <div class="heroImageArea">
+                <figure class="heroImage">
+                    <img src="./images/main-street-large.jpg" alt="Preston Idaho">
+                </figure>
+                <section class="weatherSummary">
+                    <h3>Weather Summary</h3>
+                    <hr>
+                    <div class="weatherDetails">
+                        <p class="detailsLabel">Currently:</p>
+                        <p class="detailsCondition">Sunny</p>
+                        <br>
+                        <p class="detailsLabel">Temperature:</p>
+                        <p class="detailsCondition">65 &deg;F</p>
+                        <br>
+                        <p class="detailsLabel">Humidity:</p>
+                        <p class="detailsCondition">78%</p>
+                        <br>
+                        <p class="detailsLabel">Precipitation:</p>
+                        <p class="detailsCondition">1 inches</p>
+                        <br>
+                        <p class="detailsLabel">Wind Speed:</p>
+                        <p class="detailsCondition">5 mph</p>
+                        <br>
+                        <p class="detailsLabel">Wind Chill:</p>
+                        <p class="detailsCondition" id="windchill"></p>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="fiveDayForecast">
+            <h3>5 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day of the week:</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Temperature:</th>
+                        <td>65&deg;F</td>
+                        <td>63&deg;F</td>
+                        <td>60&deg;F</td>
+                        <td>58&deg;F</td>
+                        <td>58&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <article>
+            <h3>Enjoy the mild weekend. Big changes coming!</h3>
+            <div><img src="./images/rain_showers.jpg" alt="Rain is coming this weekend!"></div>
+            <p>After a quick burst of precipitation early in the morning with the passing of a weak cool front,
+                Thursday is shaping up
+                to be partly sunny, dry and just a touch cooler than days past. Highs will stay above average,
+                though, and remain
+                warmer than normal through the weekend.
+            </p>
+            <p>
+                Sunday will be the warmest day of the extended period, with temperatures spiking into the mid 70s due
+                to warm air being
+                drawn into the region ahead of a potent cold front. That front – and the accompanying pool of cool
+                air – will send
+                temperatures plummeting early next week. Highs will drop 15°-20° from Sunday to Monday, and
+                continue to decline through
+                Halloween, which is shaping up to be cool with a slight chance of showers.</p>
+        </article>
+    </main>
+    <footer>
+        <div>
+            <address>
+                <strong>The Weather Update</strong>
+                <br>
+                123 Main Street,<br>
+                Preston, Idaho<br><br>
+                123.345.5678<br>
+                update@theweatherupdate.com
+            </address>
+            <div><img src="./images/idaho-weather.jpg" alt="Idaho Weather Map" class="map"></div>
+        </div>
+        <div class="footerBar">
+            &copy;2020 The Weather Update | Attributions | Kirsten Naughton<br>
+            <p id="footerDate"></p>
+        </div>
+    </footer>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Page - Preston Idaho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather site for a geographical area in Idaho including the towns Preston, Soda Springs, and Fish Haven">
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/small-9.css">
+    <link rel="stylesheet" href="./styles/medium-9.css">
+    <link rel="stylesheet" href="./styles/large-9.css">
+</head>
+
+<body>
+    <header>
+        <img src="./images/sun.png" alt="The Weather Update Logo">
+        <div class="headerText">
+            <h1>The Weather Update</h1>
+            <div class="subheading">Weather when YOU want it!</div>
+        </div>
+        <div class="currentConditions">
+            <img src="./images/cloud.png" alt="Current Condition Icon">
+            <p>Currently:<br>Light Rain</p>
+        </div>
+
+    </header>
+    <nav class="topnav" id="responsive">
+        <ul>
+            <li><a href=".#">Home</a></li>
+            <li><a href="./preston-9.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="./stormcenter.html">The Storm Center</a></li>
+            <li><a href="./gallery-9.html">Gallery</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2 class="townName">The Storm Center</h2>
+
+        </section>
+        <section class="form">
+            <h3>Report unusual weather or storms in your area!</h3>
+
+            <form action="thanks.html" method="GET">
+                <fieldset>
+                    <legend>User Information:</legend>
+                    <label>First Name:* <input type="text" pattern="([A-Z][a-zA-Z]*)" name='fname' required></label><br>
+                    <label>Last Name:* <input type="text" pattern="([A-Z][a-zA-Z]*)" name='lname' required></label><br>
+                    <label>Email Address: <input type="email" placeholder="email@email.com" name="email"></label><br>
+                    <label>Phone Number:* <input type="tel" required name="phone" placeholder="1234445252"></label><br>
+                    <label>Zip Code:* <input type="number" name='zip' required></label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Storm Information: </legend>
+                    <label> Storm Date: <input type="date" name="stormDate"></label><br>
+                    <label> Storm Type:<input list="stormType" name='stormType'>
+                        <datalist id="stormType">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </label><br>
+                    <label>Storm Severity - (Rating: 1 to 10) <input type="range" name='stormSeverity' value="5" min="1"
+                            max="10" step="1">
+                    </label>
+                    <br>
+
+                    <label>Storm Region:
+                        <select name="region">
+                            <option>Select Area:</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodaSprings">Soda Springs</option>
+                            <option value="fishHaven">Fish Haven</option>
+                    </label>
+                    <div>Is the user in danger?</div>
+                    <label><input type="radio" name="danger" value="yes">Yes</label>
+                    <label><input type="radio" name="danger" value="maybe">Maybe</label>
+                    <label><input type="radio" name="danger" value="no">No</label>
+
+
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information:</legend>
+                    <label>
+                        <textarea rows="10" cols="30" name="additionalInfo"></textarea>
+                    </label><br>
+                </fieldset>
+                <input type="submit" value="Share My Weather" class="button">
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <address>
+                <strong>The Weather Update</strong>
+                <br>
+                123 Main Street,<br>
+                Preston, Idaho<br><br>
+                123.345.5678<br>
+                update@theweatherupdate.com
+            </address>
+            <div><img src="./images/idaho-weather.jpg" alt="Idaho Weather Map" class="map"></div>
+        </div>
+        <div class="footerBar">
+            &copy;2020 The Weather Update | Attributions | Kirsten Naughton<br>
+            <p id="footerDate"></p>
+        </div>
+    </footer>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>

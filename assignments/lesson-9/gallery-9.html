@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery - The Weather Update</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather related images for a geographical area in Idaho including the towns Preston, Soda Springs, and Fish Haven">
+    <link rel="stylesheet" href="../../styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/small-9.css">
+    <link rel="stylesheet" href="./styles/medium-9.css">
+    <link rel="stylesheet" href="./styles/large-9.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="./images/sun.png" alt="The Weather Update Logo">
+        <div class="headerText">
+            <h1>The Weather Update</h1>
+            <div class="subheading">Weather when YOU want it!</div>
+        </div>
+        <div class="currentConditions">
+            <img src="./images/cloud.png" alt="Current Condition Icon">
+            <p>Currently:<br>Light Rain</p>
+        </div>
+
+    </header>
+    <nav class="topnav" id="responsive">
+        <ul>
+            <li><a href=".#">Home</a></li>
+            <li><a href="./preston-9.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="./stormcenter.html">The Storm Center</a></li>
+            <li><a href="./gallery-9.html">Gallery</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <!-- USE CSS GRID FOR GALLERY LAYOUT -->
+
+    <div class="grid-container">
+
+        <div class='grid-item'>
+            <figure><img src="./images/lightning-storm.jpg" alt="Lightning over Idaho">
+                <figcaption>Lightning Storm over Northern Idaho</figcaption>
+            </figure>
+        </div>
+        <div class='grid-item'>
+            <figure> <img src="./images/umbrellas.jpg" alt="floating umbrellas">
+                <figcaption>Prep for the Upcoming Rainy Weather</figcaption>
+            </figure>
+        </div>
+
+        <div class='grid-item'>
+            <figure><img src="./images/rain-on-window.jpg" alt="Raindrops on a window">
+                <figcaption>Rain Expected over the Weekend</figcaption>
+            </figure>
+        </div>
+
+        <div class='grid-item'>
+            <figure> <img src="./images/snow-mt.jpg" alt="Light snow on the mountains">
+                <figcaption>First Snowfall of the Season Yesterday</figcaption>
+            </figure>
+        </div>
+
+        <div class='grid-item'>
+            <figure> <img src="./images/storm-cloud.jpg" alt="Storm cloud amassing over Idaho">
+                <figcaption>Weekend Storm Brings Rain Clouds</figcaption>
+            </figure>
+        </div>
+
+        <div class='grid-item'>
+            <figure> <img src="./images/wind-farm.jpg" alt="wind turbines on a field">
+                <figcaption>Idaho Clean Energy</figcaption>
+            </figure>
+        </div>
+
+
+    </div>
+    <script src="scripts/hamburger.js"></script>
+</body>
+
+</html>
