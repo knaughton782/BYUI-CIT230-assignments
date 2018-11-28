@@ -6,11 +6,10 @@ prestonWeather.onload = function () {
     document.getElementById('currentCondition').innerHTML = res.weather[0].main;
     document.getElementById('currentTemp').innerHTML = res.main.temp;
     document.getElementById('humidity').innerHTML = res.main.humidity;
-    // document.getElementById('precip').innerHTML = res.rain["3h"];
     document.getElementById('windSpeed').innerHTML = res.wind.speed;
     document.getElementById('windSpeed').innerHTML = res.wind.speed;
-    document.getElementById('headerCurrentCondition').innerHTML = res.weather[0].main;
-    // document.getElementById('weatherIcon').innerHTML = res.weather.icon;
+    document.getElementById('headerCurrentCondition').innerHTML = res.weather.main;
+   
 
     if (!prestonWeather.hasOwnProperty('rain')) {
         document.getElementById('precip').innerHTML = '0';
