@@ -20,8 +20,13 @@
 
     /********* SM NAVIGATION *************/
 
+
     div.heroImageArea {
         margin: auto;
+        /*width: 95%;*/
+        /* background-image: url('../images/main-street-large.jpg');
+ background-repeat: no-repeat;*/
+        /* background-color: #002e5b; */
     }
 
     article>div {
@@ -42,16 +47,16 @@
     .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    figure {
-    padding-bottom: 10px;
-    }
-
-    figure:hover {
-    box-shadow: 5px 5px 10px #666666;
-    }
-    /***************************************/
+  
+}
+figure {
+     padding-bottom: 10px;
+}
+figure:hover {
+   box-shadow: 5px 5px 10px #666666;
+  
+}
+/***************************************/
 
 
     table {

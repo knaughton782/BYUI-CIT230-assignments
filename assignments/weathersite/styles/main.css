@@ -13,6 +13,8 @@ header {
     display: flex;
     justify-content: space-evenly;
     background-color: rgba(45, 92, 142, .8);
+    /* text-align: center; */
+    /* padding: .5rem; */
     color: #F9F7F6;
     border-top: 3px solid #ffc55b;
 }
@@ -119,6 +121,7 @@ nav a:visited {
     border-radius: 5px;
     color: #2d5c8e;
     padding: 14px 16px;
+   
 }
 
 /***************** MAIN *******************/
@@ -171,27 +174,9 @@ article {
     border: 2px solid #ffc55b;
 }
 
-section.homepage {
-    border: 3px solid #ffc55b;
-    display: inline-block;
-    margin: 25px 10px;
-    width: 300px;
-    text-align: center;
-    padding: 20px 15px;
-    vertical-align: top;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.homepageMain {
-    margin-left: 15%;
-}
-
 /************ GRID - General Info *************/
 
-.grid-container {
+ .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 15px;

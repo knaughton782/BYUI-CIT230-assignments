@@ -3,14 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Weather Page - Preston Idaho</title>
+    <title>Home Page - The Weather Site</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Weather site for a geographical area in Idaho including the towns Preston, Soda Springs, and Fish Haven">
     <link rel="stylesheet" href="../../styles/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./styles/form.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/small-9.css">
     <link rel="stylesheet" href="./styles/medium-9.css">
@@ -41,12 +40,31 @@
             <li><a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a></li>
         </ul>
     </nav>
-    <main>
-        <section>
-            <h1 class="townName">The Storm Center</h1>
-
+    <main class="homepageMain">
+        <section class="homepage">
+            <h2>Preston, Idaho</h2>
+            <h3 class="italic"><span id="prestonMotto">Preston Motto</span></h3>
+            <h3><b>Year Founded: </b><span id="prestonFounded">1900</span></h3>
+            <h3><b>Population: </b><span id="prestonPop">0</span></h3>
+            <h3><b>Annual Rain Fall: </b><span id="prestonRain">0</span> inches</h3>
+            <div><img src="./images/mts.jpg" alt="Town Image"></div>
         </section>
-        <h2 class='thankYou'>Thank you for sharing your storm and weather related information!</h2>
+        <section class="homepage">
+            <h2>Soda Springs, Idaho</h2>
+            <h3 class="italic"><span id="sodaSpringsMotto">Soda Springs Motto</span></h3>
+            <h3><b>Year Founded: </b><span id="sodaSpringsFounded">1900</span></h3>
+            <h3><b>Population: </b><span id="sodaSpringsPop">0</span></h3>
+            <h3><b>Annual Rain Fall: </b><span id="sodaSpringsRain">0</span> inches</h3>
+            <div><img src="./images/snowy-trees.jpg" alt="Town Image"></div>
+        </section>
+        <section class="homepage">
+            <h2>Fish Haven, Idaho</h2>
+            <h3 class="italic"><span id="fishHavenMotto">Fish Haven Motto</span></h3>
+            <h3><b>Year Founded: </b><span id="fishHavenFounded">1900</span></h3>
+            <h3><b>Population: </b><span id="fishHavenPop">0</span></h3>
+            <h3><b>Annual Rain Fall: </b><span id="fishHavenRain">0</span> inches</h3>
+            <div><img src="./images/town-hall.jpg" alt="Town Image"></div>
+        </section>
     </main>
     <footer>
         <div>
@@ -65,9 +83,7 @@
             <p id="footerDate"></p>
         </div>
     </footer>
-    <script src="scripts/date.js"></script>
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="./scripts/jsonWeatherPage.js"></script>
 </body>
 
 </html>

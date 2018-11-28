@@ -8,7 +8,10 @@
         list-style-type: none;
         margin: 0;
         padding: 15px;
+
     }
+
+    
 
     .topnav a {
         display: none;
@@ -17,6 +20,7 @@
     .topnav a.icon {
         display: block;
     }
+
 
     .topnav.responsive a {
         /* float: left;
