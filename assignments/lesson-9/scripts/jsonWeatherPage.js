@@ -21,12 +21,3 @@ weatherObj.onload = function() {
 
 weatherObj.send();
 
-var prestonWeather = new XMLHttpRequest();
-prestonWeather.open("GET", "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=4831108ded6d20d14caa3120d42a6376", true);
-
-prestonWeather.onload = function() {
-    var res = JSON.parse(this.responseText);
-    
-}
-
-prestonWeather.send();

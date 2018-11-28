@@ -26,7 +26,7 @@
         </div>
         <div class="currentConditions">
             <img src="./images/cloud.png" alt="Current Condition Icon">
-            <p>Currently:<br>Light Rain</p>
+            <p>Currently:<br><span id="headerCurrentCondition">Light Rain</span></p>
         </div>
 
     </header>
@@ -53,19 +53,19 @@
                     <hr>
                     <div class="weatherDetails">
                         <p class="detailsLabel">Currently:</p>
-                        <p class="detailsCondition">Sunny</p>
+                        <p class="detailsCondition"><span id="currentCondition">Sunny</span></p>
                         <br>
                         <p class="detailsLabel">Temperature:</p>
-                        <p class="detailsCondition">65 &deg;F</p>
+                        <p class="detailsCondition"><span id="currentTemp">65</span> &deg;F</p>
                         <br>
                         <p class="detailsLabel">Humidity:</p>
-                        <p class="detailsCondition">78%</p>
+                        <p class="detailsCondition"><span id="humidity">78</span>&percnt;</p>
                         <br>
                         <p class="detailsLabel">Precipitation:</p>
-                        <p class="detailsCondition">1 inches</p>
+                        <p class="detailsCondition"><span id="precip">1</span> inches</p>
                         <br>
                         <p class="detailsLabel">Wind Speed:</p>
-                        <p class="detailsCondition">5 mph</p>
+                        <p class="detailsCondition"><span id="windSpeed">5</span> mph</p>
                         <br>
                         <p class="detailsLabel">Wind Chill:</p>
                         <p class="detailsCondition" id="windchill"></p>
@@ -137,7 +137,7 @@
     <script src="scripts/date.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/windchill.js"></script>
-    <script src="scripts/jsonWeatherPage.js"></script>
+    <script src="scripts/weatherPreston.js"></script>
 </body>
 
 </html>

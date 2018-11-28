@@ -217,17 +217,14 @@ figcaption {
 /************ FOOTER ************/
 
 footer {
-    /* background-color: rgba(0, 162, 173, .5); */
     background-color: rgba(45, 92, 142, .8);
-    /* border-top: 3px solid rgb(1, 70, 86); */
     border-top: 3px solid #002e5b;
+    
 }
 
 footer>div.footerBar {
-    /* background-color: rgb(1, 70, 86); */
     background-color: #002e5b;
     border-top: 3px solid #ffc55b;
-    /* height: 25px; */
     color: #fff;
     font-size: .75em;
     text-align: center;
