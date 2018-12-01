@@ -167,6 +167,10 @@ main {
     text-align: center;
 }
 
+.snow {
+    border: 1px solid #002e5b;
+}
+
 article {
     background-color: #fae29a;
     margin: 25px;
@@ -176,7 +180,7 @@ article {
 
 /************ GRID - General Info *************/
 
- .grid-container {
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 15px;

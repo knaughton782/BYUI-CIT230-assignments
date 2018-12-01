@@ -3,8 +3,8 @@ f = 35.74 + 0.6215 t - 35.75 s0.16 + 0.4275 t s0.16
 where f is the wind chill factor in Fahrenheit, t is the air temperature in Fahrenheit, and s is the wind speed in miles per hour.  */
 
 
-var t = 65;
-var s = 5;
+var t = document.getElementById('currentTemp');
+var s = document.getElementById('windSpeed');
 var f = (35.74 + (0.6215 * t)) - (35.75 * Math.pow(s, 0.16)) + (0.4275 * t) * Math.pow(s, 0.16);
 
 document.getElementById('windchill').innerHTML = f.toFixed(1) + " &deg;F";
