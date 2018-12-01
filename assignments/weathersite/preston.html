@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>The Weather Update - Preston, Idaho</title>
+    <title>Weather Page - Preston Idaho</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Weather site for a geographical area in Idaho including the towns Preston, Soda Springs, and Fish Haven">
     <link rel="stylesheet" href="../../styles/normalize.css">
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <!--CSS FLEX REQUIRED FOR HEADER AND NAV-->
+    
     <header>
         <img src="./images/sun.png" alt="The Weather Update Logo">
         <div class="headerText">
@@ -25,8 +25,9 @@
             <div class="subheading">Weather when YOU want it!</div>
         </div>
         <div class="currentConditions">
-            <img src="./images/cloud.png" alt="Current Condition Icon">
-            <p>Currently:<br>Light Rain</p>
+            <img src="http://openweathermap.org/img/w/04n.png" alt="Current Condition">
+            
+            <p>Currently:<br><span id="headerCurrentCondition">Light Rain</span></p>
         </div>
 
     </header>
@@ -53,19 +54,19 @@
                     <hr>
                     <div class="weatherDetails">
                         <p class="detailsLabel">Currently:</p>
-                        <p class="detailsCondition">Sunny</p>
+                        <p class="detailsCondition"><span id="currentCondition">Sunny</span></p>
                         <br>
                         <p class="detailsLabel">Temperature:</p>
-                        <p class="detailsCondition">65 &deg;F</p>
+                        <p class="detailsCondition"><span id="currentTemp">65</span> &deg;F</p>
                         <br>
                         <p class="detailsLabel">Humidity:</p>
-                        <p class="detailsCondition">78%</p>
+                        <p class="detailsCondition"><span id="humidity">78</span>&percnt;</p>
                         <br>
                         <p class="detailsLabel">Precipitation:</p>
-                        <p class="detailsCondition">1 inches</p>
+                        <p class="detailsCondition"><span id="precip">1</span> inches</p>
                         <br>
                         <p class="detailsLabel">Wind Speed:</p>
-                        <p class="detailsCondition">5 mph</p>
+                        <p class="detailsCondition"><span id="windSpeed">5</span> mph</p>
                         <br>
                         <p class="detailsLabel">Wind Chill:</p>
                         <p class="detailsCondition" id="windchill"></p>
@@ -137,6 +138,7 @@
     <script src="scripts/date.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weatherPreston.js"></script>
 </body>
 
 </html>
