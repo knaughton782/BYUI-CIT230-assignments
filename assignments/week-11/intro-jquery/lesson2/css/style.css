@@ -15,7 +15,7 @@ html,body {
 }
 
 body {
-	background:url('../img/congruent_pentagon.png');
+	background:url('../img/congruent-pentagon.png');
 }
 
 .container {
@@ -86,7 +86,7 @@ body {
 	left:20px;
 	width:600px;
 	height:250px;
-	background:url('../img/head_image.jpg');
+	background:url('../img/head-image.jpg');
 	border-radius:5px;
 }
 
