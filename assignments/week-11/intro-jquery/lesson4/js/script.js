@@ -1,28 +1,45 @@
 window.onload = function () {
-  /**********************************************/
-  $('.dropdownMenu > li').hover(function() {
-    $(this).children('ul').slideDown(0500);
-  }, function() {
-      $(this).children('ul').slideUp(1000);
-  })
-    /**********************************************/
+  
+     /**********************************************/
 
-    $('.toggleBtn').click(function(){
-        $(this).toggleClass('toggleOn');
-    })
+    var fruitBasket = [{ title: 'Apples', quantity: 20 },
+        { title: 'Oranges', quantity: 25 },
+        { title: 'Kiwis', quantity: 50 },
+        { title: 'Strawberries', quantity: 45 },
+        { title: 'Bananas', quantity: 10 },
+        { title: 'Mangoes', quantity: 5 },
+        { title: 'Tomatoes', quantity: 30 }
+    ];
+  
+  $.each(fruitBasket, function(index, element){
+      $('.fruits').append(`<li>We have ${element.quantity} ${element.title}</li>`);
+  })
   
     /**********************************************/
 
-    $('.navigation > li').hover(function() {
+//   $('.dropdownMenu > li').hover(function() {
+//     $(this).children('ul').slideDown(200);
+//   }, function() {
+//       $(this).children('ul').slideUp(200);
+//   })
+    /**********************************************/
 
-        $(this).toggleClass('openSesame');
+    // $('.toggleBtn').click(function(){
+    //     $(this).toggleClass('toggleOn');
+    // })
+  
+    /**********************************************/
+
+    // $('.navigation > li').hover(function() {
+
+    //     $(this).toggleClass('openSesame');
     //     //executes on mouse hover
     //     $(this).addClass('openSesame');
     // }, function (){
     //     //executes on mouse leave
     //     $(this).removeClass('openSesame');
 
-    })
+   // })
     
     /**********************************************/
     
