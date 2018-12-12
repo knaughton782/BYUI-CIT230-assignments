@@ -1,5 +1,6 @@
 window.onload = function () {
 
+    //each assignment was commented out in order to do the next assignment but I got each to work before moving on to the next video.
     /**********************************************/
 
     var fruitBasket = [{ title: 'Apples', quantity: 20 },
