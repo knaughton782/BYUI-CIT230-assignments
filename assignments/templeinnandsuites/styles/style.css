@@ -1,0 +1,217 @@
+/********** COLORS & FONTS ************/
+/*******************************
+
+Blue: #6DABC8 / rgb(24, 42, 170)
+Yellow: #FFD463 / rgb(109, 171, 100)
+Brown/Gold: #986E00 / rgb(152, 110, 0)
+Dark Grey: #313131 / rgb(49, 49, 49)
+
+font-family: 'Playfair Display SC', serif;
+font-family: 'Roboto', sans-serif;
+
+******************************/
+
+
+/******* GENERAL STYLES FOR ALL PAGES **************/
+* {
+    margin: 0;
+    padding: 0;
+    color: #313131;
+    line-height: 1.5em;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display SC', serif;
+}
+
+main {
+    margin-bottom: 200px;
+}
+
+.clearfix {
+    overflow: hidden;
+    clear: both;
+}
+
+/********** GENERAL - LOGO STYLES ****************/
+#logo {
+    margin: 25px 25px 35px 10%;
+}
+
+#logo img {
+    width: 330px;
+    
+}
+
+/********** GENERAL - PRIMARY NAVIGATION ************/
+
+nav {
+    display: inline;
+    margin: 0;
+    
+}
+
+nav ul {
+    background-color: #6DABC8;
+    padding: 15px 40px;
+    text-align: right;
+    float: right;
+    /* margin: 75px 0 25px auto; */
+    width: 100%;
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px;
+}
+
+/******** GENERAL - PRIMARY NAVIGATION LINKS **********/
+
+nav a {
+    text-decoration: none;
+    font-family: 'Playfair Display SC', serif;
+    line-height: 1.2em;
+    font-size: 1.5em;
+}
+
+/* unvisited link */
+nav a:link {
+    color: #fff;
+}
+
+/* visited link */
+nav a:visited {
+    color: #fff;
+}
+
+/* mouse over link */
+nav a:hover {
+    color: #FFD463;
+}
+
+/* selected link */
+nav a:active {
+    color: #986E00;
+}
+
+/*********** GENERAL - FORM STYLES **********/
+fieldset {
+    border: none;
+}
+
+
+/********* GENERAL - FOOTER STYLES ***********/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #6DABC8;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer ul li {
+    display: inline;
+    padding: 15px;
+    color: #fff;
+    font-family: "Playfair Display SC", serif;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: "Playfair Display SC", serif;
+
+}
+
+/* unvisited link */
+footer a:link {
+    color: #fff;
+}
+
+/* visited link */
+footer a:visited {
+    color: #fff;
+}
+
+/* mouse over link */
+footer a:hover {
+    color: #FFD463;
+}
+
+/* selected link */
+footer a:active {
+    color: #986E00;
+}
+
+#copyright{
+    font-family: "Playfair Display SC", serif;
+    color: #fff;
+    font-size: .75em;
+    margin-top: 10px;
+}
+
+/************* Styles for small screens **********************************************************************************/
+@media  (max-width: 600px) {
+
+    /********** SMALL - LOGO STYLES ****************/
+    #logo {
+        width: 300px;
+        margin: 25px auto;
+    }
+    
+    #logo img {
+        margin: auto;
+        width: 300px;
+        
+    }
+
+    /************ SMALL - PRIMARY NAVIGATION **************/
+    nav {
+        display: inline;
+        margin: 0;
+    }
+
+    nav ul {
+        /* padding: 15px 40px 15px 20px; */
+        text-align: right;
+        /* margin: 75px 0 25px auto; */
+        
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 15px;
+    }
+}
+
+/************* Styles for medium screens **********************************************************************************/
+@media (min-width: 37.5em) and (max-width: 64em) {
+
+}
+
+/************* Styles for large screens **********************************************************************************/
+@media (min-width: 64em) {
+
+        
+    
+    /****** LARGE - PRIMARY NAVIGATION *******/
+    nav {
+        
+    }
+
+    nav ul {
+        /* margin: 75px 0 25px auto; */
+   }
+
+    nav ul li {
+        
+    }
+}
