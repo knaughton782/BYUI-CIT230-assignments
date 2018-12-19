@@ -40,12 +40,13 @@ main {
 
 /********** GENERAL - LOGO STYLES ****************/
 #logo {
-    margin: 25px 25px 35px 10%;
+    margin: 25px 10% 35px 10%;
 }
 
 #logo img {
     width: 330px;
-    
+    float: right;
+    margin-bottom: 35px;
 }
 
 /********** GENERAL - PRIMARY NAVIGATION ************/
@@ -59,9 +60,8 @@ nav {
 nav ul {
     background-color: #6DABC8;
     padding: 15px 40px;
-    text-align: right;
-    float: right;
-    /* margin: 75px 0 25px auto; */
+    text-align: left;
+    float: left;
     width: 100%;
 }
 
@@ -99,17 +99,83 @@ nav a:active {
     color: #986E00;
 }
 
+.fa-bars {
+    color: #fff;
+    display: none;
+}
+
+/*********** GENERAL BODY STYLES ************/
+h2 {
+    margin-bottom: 10px;
+}
+
+/******** embedded google map ***********/
+ .map {
+    text-align: right;
+    height: 400px;
+    width: 350px;
+}
+                
+.gmap {
+    overflow: hidden;
+    background: none !important;
+    height: 400px;
+    width: 350px;
+}
+
 /*********** GENERAL - FORM STYLES **********/
 fieldset {
     border: none;
+}
+
+.form {
+
+}
+
+form input {
+    height: 44px;
+    margin: 10px;
+    width: 300px;
+    max-width: 100em;
+    border-radius: 5px;
+}
+
+textarea {
+    margin: 10px 0 0 8px;
+    border-radius: 5px;
+    border: 2px inset #F0F0F0;
+}
+
+fieldset {
+    max-width: 320px;
+    margin: 20px 10px;
+    border-radius: 5px;
+}
+
+.button {
+    margin: 20px;
+    background-color: #FFD463;
+    border: 1px solid #fcb93e;
+}
+
+.thankYou {
+    margin: 15px 0 0 35px;
+    text-align: right;
+    max-width: 500px;
+    line-height: 150%;
+}
+
+/******* contact page ************/
+.additionalInfo {
+    margin: 25px 0;
 }
 
 /********* GENERAL - FLEXBOX STYLES ***********/
 
 .flex-container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 

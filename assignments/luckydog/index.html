@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styleResponsive.css">
     <title>Temple Inn and Suites - Home</title>
 </head>
 <body>
@@ -16,14 +18,16 @@
     <div id="logo">
         <img src="./images/logo.png" alt="Temple Inn & Suites Logo">
     </div>
-    <nav>
+    <nav class="topnav" id="responsive">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="temples.html">Temples</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a>
+            <li><a href="index.html" class="menuItem">Home</a></li>
+            <li><a href="services.html" class="menuItem">Services</a></li>
+            <li><a href="reservations.html" class="menuItem">Reservations</a></li>
+            <li><a href="temples.html" class="menuItem">Temples</a></li>
+            <li><a href="contact.html" class="menuItem">Contact</a></li>
         </ul>
+    </nav>
     </nav>
     <div class="clearfix"></div>
     <main>
@@ -68,14 +72,13 @@
         <div id="footerNav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="reservations.html">Make a Reservation</a></li>
-                <li><a href="temples.html">About LDS Temples</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="resources.html">About LDS Temples</a></li>
+                <li><a href="resources.html">Resources</a></li>
             </ul>
         </div>
         <div id="copyright">All Content &copy; Temple Inn & Suites | Kirsten Naughton</div>
     </footer>
     <script src="scripts/script.js"></script>
-</body>
-</html>
+    </body>
+    
+    </html>

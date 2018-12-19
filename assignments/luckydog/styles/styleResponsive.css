@@ -1,16 +1,44 @@
+/************* Styles for large screens **********************************************************************************/
+@media (min-width: 64em) {
+
+   
+}
+
+
+/************* Styles for medium screens **********************************************************************************/
+@media (min-width: 37.5em) and (max-width: 64em) {
+    
+    /*************** MEDIUM NAV ***************/
+    .fa-bars {
+        display: none;
+    }
+    
+    /*************** MEDIUM BODY ***************/
+    main {
+        margin-bottom: 50px;
+    }
+
+
+    /*************** MEDIUM FOOTER ***************/
+    footer {
+        overflow: hidden;
+    }
+
+}
+
+
+
 /************* Styles for small screens **********************************************************************************/
 @media  (max-width: 600px) {
 
     /********** SMALL - LOGO STYLES ****************/
     #logo {
-        width: 300px;
+        width: 280px;
         margin: 25px auto;
     }
     
     #logo img {
-        margin: auto;
         width: 300px;
-        
     }
 
     /************ SMALL - PRIMARY NAVIGATION **************/
@@ -20,9 +48,7 @@
     }
 
     nav ul {
-        /* padding: 15px 40px 15px 20px; */
         text-align: right;
-        /* margin: 75px 0 25px auto; */
         
     }
 
@@ -30,28 +56,94 @@
         display: inline;
         padding: 15px;
     }
-}
 
-/************* Styles for medium screens **********************************************************************************/
-@media (min-width: 37.5em) and (max-width: 64em) {
-
-}
-
-/************* Styles for large screens **********************************************************************************/
-@media (min-width: 64em) {
-
-        
+    /************ SMALL - RESPONSIVE TOP NAV **************/
+    .menuItem {
+        display: none;
+    }
     
-    /****** LARGE - PRIMARY NAVIGATION *******/
-    nav {
-        
+    .fa-bars {
+        float: left;
+        display: block;
     }
 
-    nav ul {
-        /* margin: 75px 0 25px auto; */
-   }
-
-    nav ul li {
-        
+    .topnavresponsive {
+        position: relative;
     }
+
+    .topnavresponsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        font-size: 16px;
+        padding-top: 5px;
+    }
+
+    /************** SMALL - MAP ************/
+    /******** embedded google map ***********/
+    .map {
+        text-align: right;
+        height: 400px;
+        width: 300px;
 }
+                
+    .gmap {
+        overflow: hidden;
+        background: none !important;
+        height: 400px;
+        width: 300px;
+    }
+
+    /*************** FORM ****************/
+    .form {
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    form input {
+        height: 44px;
+        margin: 10px;
+        width: 280px;
+        max-width: 80em;
+        border-radius: 5px;
+    }
+
+
+    /********* SMALL SCREEN - FOOTER STYLES ***********/
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        background-color: #6DABC8;
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    footer ul li {
+        display: inline;
+        padding: 15px;
+        color: #fff;
+        font-family: "Playfair Display SC", serif;
+    }
+
+    footer a {
+        text-decoration: none;
+        font-family: "Playfair Display SC", serif;
+        font-size: .8em;
+
+    }
+
+    #copyright{
+        font-family: "Playfair Display SC", serif;
+        color: #fff;
+        font-size: .5em;
+        margin-top: 10px;
+    }
+
+}
+
+
+
