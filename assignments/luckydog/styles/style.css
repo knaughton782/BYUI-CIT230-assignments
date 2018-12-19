@@ -22,7 +22,6 @@ font-family: 'Roboto', sans-serif;
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,6 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main {
+    margin: 2% 5%;
     margin-bottom: 200px;
 }
 
@@ -104,6 +104,14 @@ fieldset {
     border: none;
 }
 
+/********* GENERAL - FLEXBOX STYLES ***********/
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 /********* GENERAL - FOOTER STYLES ***********/
 
@@ -156,62 +164,4 @@ footer a:active {
     color: #fff;
     font-size: .75em;
     margin-top: 10px;
-}
-
-/************* Styles for small screens **********************************************************************************/
-@media  (max-width: 600px) {
-
-    /********** SMALL - LOGO STYLES ****************/
-    #logo {
-        width: 300px;
-        margin: 25px auto;
-    }
-    
-    #logo img {
-        margin: auto;
-        width: 300px;
-        
-    }
-
-    /************ SMALL - PRIMARY NAVIGATION **************/
-    nav {
-        display: inline;
-        margin: 0;
-    }
-
-    nav ul {
-        /* padding: 15px 40px 15px 20px; */
-        text-align: right;
-        /* margin: 75px 0 25px auto; */
-        
-    }
-
-    nav ul li {
-        display: inline;
-        padding: 15px;
-    }
-}
-
-/************* Styles for medium screens **********************************************************************************/
-@media (min-width: 37.5em) and (max-width: 64em) {
-
-}
-
-/************* Styles for large screens **********************************************************************************/
-@media (min-width: 64em) {
-
-        
-    
-    /****** LARGE - PRIMARY NAVIGATION *******/
-    nav {
-        
-    }
-
-    nav ul {
-        /* margin: 75px 0 25px auto; */
-   }
-
-    nav ul li {
-        
-    }
 }

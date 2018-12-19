@@ -1,0 +1,57 @@
+/************* Styles for small screens **********************************************************************************/
+@media  (max-width: 600px) {
+
+    /********** SMALL - LOGO STYLES ****************/
+    #logo {
+        width: 300px;
+        margin: 25px auto;
+    }
+    
+    #logo img {
+        margin: auto;
+        width: 300px;
+        
+    }
+
+    /************ SMALL - PRIMARY NAVIGATION **************/
+    nav {
+        display: inline;
+        margin: 0;
+    }
+
+    nav ul {
+        /* padding: 15px 40px 15px 20px; */
+        text-align: right;
+        /* margin: 75px 0 25px auto; */
+        
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 15px;
+    }
+}
+
+/************* Styles for medium screens **********************************************************************************/
+@media (min-width: 37.5em) and (max-width: 64em) {
+
+}
+
+/************* Styles for large screens **********************************************************************************/
+@media (min-width: 64em) {
+
+        
+    
+    /****** LARGE - PRIMARY NAVIGATION *******/
+    nav {
+        
+    }
+
+    nav ul {
+        /* margin: 75px 0 25px auto; */
+   }
+
+    nav ul li {
+        
+    }
+}

@@ -29,8 +29,36 @@
         </nav>
         <div class="clearfix"></div>
         <main>
-            <h1>Resources</h1>
-           
+            <p>The reservation page contains a form that collects relevant information when making a normal stay
+                reservation including
+                the location, date, number and type of rooms, registrant's full name, email, phone, home state or
+                country, and special
+                accommodations/comments.</p>
+
+            <section>
+                <h3>Contact Us With Questions!</h3>
+                form needs to include:
+                location
+                date
+                number and type of rooms
+                person's name, email, phone, home address, special comments section
+
+                <!-- TODO: form needs submit action implemented -->
+                <form action="#" method="GET" class="contact">
+                    <fieldset>
+                        <legend>User Information:</legend>
+                        <label>First Name:* <br><input type="text" pattern="([A-Z][a-zA-Z]*)" name='fname' required></label><br>
+                        <label>Last Name:* <br><input type="text" pattern="([A-Z][a-zA-Z]*)" name='lname' required></label><br>
+                        <label>Email Address: <br><input type="email" name="email" class="email"></label><br>
+                        <br>
+                        <legend>Additional Information:</legend>
+                        <label>
+                            <textarea rows="10" cols="48" name="additionalInfo" class="additionalInfo"></textarea>
+                        </label><br>
+                    </fieldset>
+                    <button type="submit" value="Submit My Reservation" name="reservation">
+                </form>
+            </section>
         </main>
 
         <footer>
