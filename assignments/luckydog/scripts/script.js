@@ -7,6 +7,25 @@ function hamburger() {
     }
 }
 
+var request = new XMLHttpRequest();
+var url = "./temples.json";
+
+request.open("GET", url, true);
+request.setRequestHeader("content-type", "application/jason");
+request.onreadystatechange = function() {
+    if (request.readyState == 4 && request.status == 200) {
+        var response = JSON.parse(request.responseText);
+    }
+}
+request.send();
+var output1 = document.getElementById("closeSchedule1");
+var output2 = document.getElementById("closeSchedule2");
+var output3 = document.getElementById("closeSchedule3");
+var output4 = document.getElementById("closeSchedule4");
+
+output1.innerHTML = url.closeSchedule1;
+
+
 $(document).ready(function() {
 
     var t1 = $("#temple1");
