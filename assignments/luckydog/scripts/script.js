@@ -64,17 +64,27 @@ $(document).ready(function () {
 
 
 //////////// json section ///////////////////
-var output = document.getElementById('closeSchedule');
+//var output = document.getElementById('closeSchedule');
 var request = new XMLHttpRequest();
 var url = "https://knaughton782.github.io/assignments/luckydog/scripts/temples.json";
 
 
 
 request.onreadystatechange = function () {
-     if (request.readyState == 4 && request.status == 200) {
-            output.innerHTML = JSON.parse(request.responseText)[0];
+    if (request.readyState == 4 && request.status == 200) {
+            //output.innerHTML = JSON.parse(request.responseText)[0];
+            //console.log(request.responseText);
+            var response = JSON.parse(request.responseText);
+            //console.log(response.temples);
+            var temples = response;
+
+            var output = '';
+            for (var i = 0; i < temples.length; i++) {
+                output += temples[i].closeSchedule;
+            }
+            document.getElementById('closeSchedule').innerHTML = output;
     }
-}
+};
 request.open("GET", url, true);
 request.send();
 
