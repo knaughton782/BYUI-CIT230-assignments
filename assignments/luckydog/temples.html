@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,110 +13,142 @@
     <link rel="stylesheet" href="./styles/styleResponsive.css">
     <title>Temple Inn and Suites - Home</title>
 </head>
+
 <body>
 
-<header>
-    <div id="logo">
-        <img src="./images/logo.png" alt="Temple Inn & Suites Logo">
-    </div>
-    <div id="headerImg">
-        <img src="./images/hotel-night.jpg" alt="">
-    </div>
-    <nav class="topnav" id="responsive">
-        <ul>
-            <a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a>
-            <li><a href="index.html" class="menuItem">Home</a></li>
-            <li><a href="services.html" class="menuItem">Services</a></li>
-            <li><a href="reservations.html" class="menuItem">Reservations</a></li>
-            <li><a href="temples.html" class="menuItem">Temples</a></li>
-            <li><a href="contact.html" class="menuItem">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="clearfix"></div>
-    <main>
-        <p>The temple page describes the details for at least four temples providing information about the address, telephone,
-        email, services, history, ordinance schedule, session schedule, temple closure schedule (JSON source), and summary,
-        current weather information obtained from a third party API.</p>
-
-        <div class="flex-container">
-            <section class="aboutTemples">
-                <h2 class="templeName">Temple Name</h2>
-                <p class="templePhone">Temple Phone</p>
-                <p class="templeEmail">Temple Email</p>
-                <p class="templeLocation">Temple Location</p>
-                <p class="templeServices">Temple Services</p>
-                <p class="templeHistory">Temple History</p>
-                <p class="ordSchedule">Temple Ordinance Schedule</p>
-                <p class="sessionSchedule">Temple Session Schedule</p>
-                <p class="closeSchedule">Temple Closure Schedule from JSON</p>
-                <p class="nearbyWeather">Weather Near Temple from API</p>
-                <p class="templeComments">No special instructions available at this time.</p>
-           
-            <div class="templePic">Temple Picture</div>
-            <button type="button" id="nextTemple" onclick="">Next Temple</button>
-            </section>
-            <section class="aboutTemples">
-                <h2 class="templeName">Temple Name</h2>
-                <p class="templePhone">Temple Phone</p>
-                <p class="templeEmail">Temple Email</p>
-                <p class="templeLocation">Temple Location</p>
-                <p class="templeServices">Temple Services</p>
-                <p class="templeHistory">Temple History</p>
-                <p class="ordSchedule">Temple Ordinance Schedule</p>
-                <p class="sessionSchedule">Temple Session Schedule</p>
-                <p class="closeSchedule">Temple Closure Schedule from JSON</p>
-                <p class="nearbyWeather">Weather Near Temple from API</p>
-                <p class="templeComments">No special instructions available at this time.</p>
-            
-                <div class="templePic">Temple Picture</div>
-                <button type="button" id="nextTemple" onclick="">Next Temple</button>
-            </section>
-            <section class="aboutTemples">
-                <h2 class="templeName">Temple Name</h2>
-                <p class="templePhone">Temple Phone</p>
-                <p class="templeEmail">Temple Email</p>
-                <p class="templeLocation">Temple Location</p>
-                <p class="templeServices">Temple Services</p>
-                <p class="templeHistory">Temple History</p>
-                <p class="ordSchedule">Temple Ordinance Schedule</p>
-                <p class="sessionSchedule">Temple Session Schedule</p>
-                <p class="closeSchedule">Temple Closure Schedule from JSON</p>
-                <p class="nearbyWeather">Weather Near Temple from API</p>
-                <p class="templeComments">No special instructions available at this time.</p>
-            
-                <div class="templePic">Temple Picture</div>
-                <button type="button" id="nextTemple" onclick="">Next Temple</button>
-            </section>
-            <section class="aboutTemples">
-                <h2 class="templeName">Temple Name</h2>
-                <p class="templePhone">Temple Phone</p>
-                <p class="templeEmail">Temple Email</p>
-                <p class="templeLocation">Temple Location</p>
-                <p class="templeServices">Temple Services</p>
-                <p class="templeHistory">Temple History</p>
-                <p class="ordSchedule">Temple Ordinance Schedule</p>
-                <p class="sessionSchedule">Temple Session Schedule</p>
-                <p class="closeSchedule">Temple Closure Schedule from JSON</p>
-                <p class="nearbyWeather">Weather Near Temple from API</p>
-                <p class="templeComments">No special instructions available at this time.</p>
-            
-                <div class="templePic">Temple Picture</div>
-                <button type="button" id="nextTemple" onclick="">Next Temple</button>
-            </section>
+    <header>
+        <div id="logo">
+            <img src="./images/logo.png" alt="Temple Inn & Suites Logo">
         </div>
-    </main>
+        <div id="headerImg">
+            <img src="./images/hotel-night.jpg" alt="">
+        </div>
+        <nav class="topnav" id="responsive">
+            <ul>
+                <a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a>
+                <li><a href="index.html" class="menuItem">Home</a></li>
+                <li><a href="services.html" class="menuItem">Services</a></li>
+                <li><a href="reservations.html" class="menuItem">Reservations</a></li>
+                <li><a href="temples.html" class="menuItem">Temples</a></li>
+                <li><a href="contact.html" class="menuItem">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+        <main>
+            <p> services, history, ordinance schedule, session schedule, temple closure schedule (JSON source), and
+                summary,
+                current weather information obtained from a third party API.</p>
+            <!-- Must be logged in to view temple email and can only send email via a form so I removed the email field -->
+            <div class="flex-container">
+                <section class="aboutTemples">
+                    <div class="homePageImg">
+                        <figure><img src="./images/saltLake.jpg" alt="Salt Lake Temple">
+                            <figcaption>Salt Lake, Utah</figcaption>
+                        </figure>
+                    </div>
+                    <div class="info">
+                        <h2 class="templeName">Salt Lake Temple</h2>
+                        <hr>
+                        <p class="templePhone"><b>Phone:</b> 801-240-2640</p>
+                        <p class="templeLocation"><b>Address:</b> 50 W North Temple St<br>
+                            Salt Lake City, UT 84150-9709</p>
+                        <p class="templeServices"><b>Services: </b>Clothing rental available<br>
+                        Cafeteria available<br>
+                        No patron housing available<br>
+                        Distribution center nearby</p>
+                        <p class="templeHistory"><b>History: </b>
+                        Announced: July 28, 1847<br>
+                        
+                        Groundbreaking: February 14, 1853<br>
+                        
+                        Dedicated: April 6, 1893</p>
+                        <p class="ordSchedule"><b>Ordinance Schedule: </b></p>
+                        <p class="sessionSchedule"><b>Session Schedule: </b></p>
+                        <p class="closeSchedule"><b>Closure Schedule from JSON: </b></p>
+                        <p class="nearbyWeather"><b>Area Weather: </b> Near Temple from API</p>
+                        <p class="templeComments"><b>Special Instructions: </b></p>
+                    </div>
+                </section>
+                <section class="aboutTemples">
+                    <div class="homePageImg">
+                        <figure><img src="./images/saltLake.jpg" alt="Salt Lake Temple">
+                            <figcaption>Salt Lake, Utah</figcaption>
+                        </figure>
+                    </div>
+                    <div class="info">
+                        <h2 class="templeName">Salt Lake Temple</h2>
+                        <hr>
+                        <p class="templePhone"><b>Phone:</b> 801-240-2640</p>
+                        <p class="templeLocation"><b>Address:</b> 50 W North Temple St<br>
+                            Salt Lake City, UT 84150-9709</p>
+                        <p class="templeServices"><b>Services: </b>Temple Services</p>
+                        <p class="templeHistory"><b>History: </b>Temple History</p>
+                        <p class="ordSchedule"><b>Ordinance Schedule: </b></p>
+                        <p class="sessionSchedule"><b>Session Schedule: </b></p>
+                        <p class="closeSchedule"><b>Closure Schedule from JSON: </b></p>
+                        <p class="nearbyWeather"><b>Area Weather: </b> Near Temple from API</p>
+                        <p class="templeComments"><b>Special Instructions: </b></p>
+                    </div>
+                </section>
+                <section class="aboutTemples">
+                    <div class="homePageImg">
+                        <figure><img src="./images/saltLake.jpg" alt="Salt Lake Temple">
+                            <figcaption>Salt Lake, Utah</figcaption>
+                        </figure>
+                    </div>
+                    <div class="info">
+                        <h2 class="templeName">Salt Lake Temple</h2>
+                        <hr>
+                        <p class="templePhone"><b>Phone:</b> 801-240-2640</p>
+                        <p class="templeLocation"><b>Address:</b> 50 W North Temple St<br>
+                            Salt Lake City, UT 84150-9709</p>
+                        <p class="templeServices"><b>Services: </b>Clothing rental available<br>
+                        Cafeteria available<br>
+                        No patron housing available<br>
+                        Distribution center nearby</p>
+                        <p class="templeHistory"><b>History: </b>Temple History</p>
+                        <p class="ordSchedule"><b>Ordinance Schedule: </b></p>
+                        <p class="sessionSchedule"><b>Session Schedule: </b></p>
+                        <p class="closeSchedule"><b>Closure Schedule from JSON: </b></p>
+                        <p class="nearbyWeather"><b>Area Weather: </b> Near Temple from API</p>
+                        <p class="templeComments"><b>Special Instructions: </b></p>
+                    </div>
+                </section>
+                <section class="aboutTemples">
+                    <div class="homePageImg">
+                        <figure><img src="./images/saltLake.jpg" alt="Salt Lake Temple">
+                            <figcaption>Salt Lake, Utah</figcaption>
+                        </figure>
+                    </div>
+                    <div class="info">
+                        <h2 class="templeName">Salt Lake Temple</h2>
+                        <hr>
+                        <p class="templePhone"><b>Phone:</b> 801-240-2640</p>
+                        <p class="templeLocation"><b>Address:</b> 50 W North Temple St<br>
+                            Salt Lake City, UT 84150-9709</p>
+                        <p class="templeServices"><b>Services: </b>Temple Services</p>
+                        <p class="templeHistory"><b>History: </b>Temple History</p>
+                        <p class="ordSchedule"><b>Ordinance Schedule: </b></p>
+                        <p class="sessionSchedule"><b>Session Schedule: </b></p>
+                        <p class="closeSchedule"><b>Closure Schedule from JSON: </b></p>
+                        <p class="nearbyWeather"><b>Area Weather: </b> Near Temple from API</p>
+                        <p class="templeComments"><b>Special Instructions: </b></p>
+                    </div>
+                </section>
+            </div>
+        </main>
 
-<footer>
-    <div id="footerNav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="resources.html">Resources</a></li>
-        </ul>
-    </div>
-    <div id="copyright">All Content &copy; Temple Inn & Suites | Kirsten Naughton</div>
-</footer>
-<script src="scripts/script.js"></script>
+        <footer>
+            <div id="footerNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </div>
+            <div id="copyright">All Content &copy; Temple Inn & Suites | Kirsten Naughton</div>
+        </footer>
+        <script src="scripts/script.js"></script>
 </body>
 
 </html>

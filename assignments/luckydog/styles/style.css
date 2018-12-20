@@ -145,6 +145,7 @@ figure {
     background-color: rgba(152, 110, 0, .4);
     display: inline-block;
     border: 1px solid #313131;
+    border-radius: 5px;
 }
 
 figcaption {
@@ -240,8 +241,8 @@ input[type="radio"] {
 .makeReservation {
     background-color: #f0efef;
     padding: 20px;
-    border-radius: 5px;
     border: 1px solid #ccc;
+    border-radius: 5px;
     box-shadow: 5px 5px 25px #4d4d4d;
     margin: 0 0 25px 15px;
     width: 260px;
@@ -251,10 +252,12 @@ input[type="radio"] {
 div.homePageImg {
     margin: 10px 0 ;
     float: left;
+
 }
 
 div.homePageImg img {
     padding: 5px;
+    border-radius: 5px;
 }
 
 div.imgDescription {
@@ -277,6 +280,11 @@ div.imgDescription {
     max-width: 500px;
 }
 
+/********** temple page *************/
+div.info {
+    margin: 35px auto;
+    width: 300px;
+}
 
 /********* GENERAL - FLEXBOX STYLES ***********/
 
