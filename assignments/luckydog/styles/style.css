@@ -169,6 +169,11 @@ figcaption {
     background: none !important;
     height: 400px;
     width: 350px;
+    
+}
+
+iframe {
+    border: 0;
 }
 
 /*********** GENERAL - FORM STYLES **********/
