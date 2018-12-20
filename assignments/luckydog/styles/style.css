@@ -140,7 +140,9 @@ section {
 }
 
 figure {
-    background-color: rgba(109, 171, 200, .5);
+    /* background-color: rgba(109, 171, 200, .5); */
+    /* background-color: rgba(255, 212, 99, .9); */
+    background-color: rgba(152, 110, 0, .4);
     display: inline-block;
     border: 1px solid #313131;
 }
@@ -220,14 +222,6 @@ fieldset {
     float: right;
 }
 
-/********** services page ************/
-.services {
-    width: 300px;
-}
-
-
-
-
 div.homePageImg {
     margin: 10px 0 ;
     float: left;
@@ -242,6 +236,12 @@ div.imgDescription {
     max-width: 400px;
     margin: 20px 20px 20px 30px;
 }
+
+/********** services page ************/
+.services {
+    width: 300px;
+}
+/** also view homePageImg style in home page section **/
 
 
 /********* GENERAL - FLEXBOX STYLES ***********/
