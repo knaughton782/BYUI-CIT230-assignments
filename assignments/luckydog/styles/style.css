@@ -141,6 +141,8 @@ section {
 
 figure {
     background-color: rgba(109, 171, 200, .5);
+    display: inline-block;
+    border: 1px solid #313131;
 }
 
 figcaption {
@@ -210,17 +212,26 @@ fieldset {
     border: 1px solid #ccc;
     box-shadow: 5px 5px 25px #4d4d4d;
     margin: 0 0 25px 15px;
+    width: 260px;
+    float: right;
 }
 
-div.hotelRoomImg {
+div.homePageImg {
     margin: 10px 0 ;
-
+    float: left;
+    display: inline-block;
 }
-div.hotelRoomImg img {
-    border: 1px solid #313131;
+
+div.homePageImg img {
     padding: 5px;
-
 }
+
+div.imgDescription {
+    float: right;
+    max-width: 400px;
+    margin: 20px 20px 20px 30px;
+}
+
 
 /********* GENERAL - FLEXBOX STYLES ***********/
 
