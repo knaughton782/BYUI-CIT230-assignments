@@ -150,6 +150,10 @@ figcaption {
     padding-bottom: 5px;
 }
 
+.services li {
+    margin-left: 35px;
+}
+
 /******** embedded google map ***********/
 .map {
     text-align: right;
@@ -216,10 +220,17 @@ fieldset {
     float: right;
 }
 
+/********** services page ************/
+.services {
+    width: 300px;
+}
+
+
+
+
 div.homePageImg {
     margin: 10px 0 ;
     float: left;
-    display: inline-block;
 }
 
 div.homePageImg img {
