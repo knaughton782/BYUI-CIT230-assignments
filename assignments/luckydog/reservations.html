@@ -35,18 +35,11 @@
         </nav>
         <div class="clearfix"></div>
         <main>
-            <p>
-                the location, date, number and type of rooms, registrant's full name, email, phone, home state or
-                country, and special
-                accommodations/comments.</p>
-
-            <section>
+            <section class="flex-container reservations">
                 <h3>Fill out Form to Make an Online Reservation</h3>
-                form needs to include:
-                location
-                date
-                number and type of rooms
-                person's name, email, phone, home address, special comments section
+                                number and type of rooms the location, date, number and type of rooms, registrant's home state or
+                country
+                
 
                 <!-- TODO: form needs submit action implemented -->
                 <form action="#" method="GET" class="contact">
@@ -54,12 +47,35 @@
                         <label>First Name:* <br><input type="text" pattern="([A-Z][a-zA-Z]*)" name='fname' required></label><br>
                         <label>Last Name:* <br><input type="text" pattern="([A-Z][a-zA-Z]*)" name='lname' required></label><br>
                         <label>Email Address:* <br><input type="email" name="email" class="email" required></label><br>
+                        <label>Home Address:* <br><input type="text" name="address" class="address" required></label><br>
+                        <label>Phone:* <br><input type="tel" name="phone" class="phone" required></label><br>
+                        <label>Hotel Location:
+                            <select name="area" class="area">
+                                <option class="select">Select Area:</option>
+                                <option value="maryland">Bethesda, Maryland</option>
+                                <option value="arizona">Mesa, Arizona</option>
+                                <option value="calgaryCanada">Alberta, Calgary, Canada</option>
+                                </select>
+                        </label><br>
+                        
                         <br>
-
-                        <textarea rows="10" cols="48" name="additionalInfo" class="additionalInfo"></textarea>
+                        <label>Arrival Date:* <br><input type="date" name="travelDates" required></label><br>
                         <br>
+                        <label>Departure Date:* <br><input type="date" name="travelDates" required></label><br>
+                        <br>
+                        <label>Number of Rooms: (1-5)<br> <input type="range" name='numRooms' value="1" min="1" max="5" step="1">
+                        </label>
+                        <p class='disclaimer'>For more than 5 rooms, please call us!</p>
+                        <div>
+                            <label>
+                                <h3>Additional Information or Special Requests:</h3>
+                            </label>
+                            <textarea rows="10" cols="36" name="additionalInfo" class="additionalInfo"></textarea>
+                            <br>
+                        </div>
+                        
                     </fieldset>
-                    <button type="submit" value="Submit My Reservation" name="reservation">
+                    <input type="submit" value="Submit My Reservation" class="button">
                 </form>
             </section>
         </main>

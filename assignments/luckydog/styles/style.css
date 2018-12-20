@@ -205,6 +205,24 @@ fieldset {
 .btnSpace {
     margin-left: 30px;
 }
+
+.area {
+    border: 1px inset #F0F0F0;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+select {
+    margin: 15px 10px;
+    width: 300px;
+    height: 44px;
+}
+
+.disclaimer {
+    font-size: .75em;
+    text-align: center;
+    margin-bottom: 10px;
+}
 /******* contact page ************/
 .additionalInfo {
     margin: 25px 0;
@@ -237,11 +255,18 @@ div.imgDescription {
     margin: 20px 20px 20px 30px;
 }
 
+
 /********** services page ************/
 .services {
     width: 300px;
 }
 /** also view homePageImg style in home page section **/
+
+
+/********** reservations page ************/
+.reservations{
+    max-width: 500px;
+}
 
 
 /********* GENERAL - FLEXBOX STYLES ***********/
