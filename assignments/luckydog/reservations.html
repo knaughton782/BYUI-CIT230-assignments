@@ -37,10 +37,6 @@
         <main>
             <section class="flex-container reservations">
                 <h3>Fill out Form to Make an Online Reservation</h3>
-                                number and type of rooms the location, date, number and type of rooms, registrant's home state or
-                country
-                
-
                 <!-- TODO: form needs submit action implemented -->
                 <form action="#" method="GET" class="contact">
                     <fieldset>
@@ -63,9 +59,12 @@
                         <br>
                         <label>Departure Date:* <br><input type="date" name="travelDates" required></label><br>
                         <br>
-                        <label>Number of Rooms: (1-5)<br> <input type="range" name='numRooms' value="1" min="1" max="5" step="1">
+                        <label>Number of Rooms: (1-5) <br><span class='disclaimer'>Please call for more than 5 rooms!</span><br> <input type="range" name='numRooms' value="1" min="1" max="5" step="1">
                         </label>
-                        <p class='disclaimer'>For more than 5 rooms, please call us!</p>
+                        <label>Room Type:</label><br>
+                        <input type="radio" name="roomType" value="king">King Bed<br>
+                        <input type="radio" name="roomType" value="queen">Two Queen Beds<br>
+                        <input type="radio" name="roomType" value="family">Family Suite<br><br>
                         <div>
                             <label>
                                 <h3>Additional Information or Special Requests:</h3>

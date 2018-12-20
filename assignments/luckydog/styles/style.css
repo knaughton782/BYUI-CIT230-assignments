@@ -223,6 +223,13 @@ select {
     text-align: center;
     margin-bottom: 10px;
 }
+
+input[type="radio"] {
+    height: 25px;
+    margin: 3px;
+    width: 30px;
+    text-align: middle;
+}
 /******* contact page ************/
 .additionalInfo {
     margin: 25px 0;
