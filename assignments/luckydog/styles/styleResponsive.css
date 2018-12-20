@@ -13,16 +13,15 @@
         display: none;
     }
     nav ul {
-        background-color: #6DABC8;
         padding: 15px 20px;
-        text-align: left;
-        float: left;
+        text-align: center;
+        /* float: left; */
         width: 100%;
     }
     
     /*************** MEDIUM BODY ***************/
     main {
-        margin-bottom: 50px;
+        margin-bottom: 200px;
     }
 
     .makeReservation {
@@ -48,6 +47,7 @@
     /*************** MEDIUM FOOTER ***************/
     footer {
         overflow: hidden;
+        width: 100%;
     }
 
 }
