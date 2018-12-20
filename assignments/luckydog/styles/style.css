@@ -288,7 +288,18 @@ div.imgDescription {
 /********** temple page *************/
 div.info {
     margin: 35px auto;
-    width: 300px;
+    max-width: 350px;
+}
+
+div#templeButton {
+    position: relative;
+    
+}
+
+div#templeButton .button {
+    position: absolute;
+    width: 75px;
+    margin: auto;
 }
 
 /********* GENERAL - FLEXBOX STYLES ***********/

@@ -34,128 +34,137 @@
             </ul>
         </nav>
         <div class="clearfix"></div>
-        </header>
-        <main>
-            <h1>Highlighted Temples</h1>
-            <!-- Must be logged in to view temple email and can only send email via a form so I removed the email field -->
-            <div class="flex-container">
+    </header>
+    <main>
+        <h1>Highlighted Temples</h1>
+        <!-- Must be logged in to view temple email and can only send email via a form so I removed the email field -->
+        <div class="flex-container">
 
-                <section class="aboutTemples">
-                    <div class="homePageImg">
-                        <figure><img src="./images/calgary.jpg" alt="Calgary Alberta Canada Temple">
-                            <figcaption>Calgary Alberta Canada</figcaption>
-                        </figure>
-                    </div>
-                    <div class="info">
-                        <h2 class="templeName">Calgary Alberta Temple</h2>
-                        <hr>
-                        <p class="templePhone"><b>Phone:</b> 403-241-4250</p>
-                        <p class="templeLocation"><b>Address:</b> 9802 Rocky Ridge Rd NW<br>
-                            Calgary AB T3G 5J7<br>
-                            Canada</p>
-                        <p class="templeServices"><b>Services: </b>Distribution center nearby</p>
-                        <p class="templeHistory"><b>History: </b>
-                            Announced: October 4, 2008<br>
-                            Groundbreaking: May 15, 2010<br>
-                            Dedicated: October 28, 2012</p>
-                        <p class="ordSchedule"><b>Ordinance Schedule: </b></p>
-                        <p class="sessionSchedule"><b>Session Schedule: </b></p>
-                        <p class="closeSchedule"><b>Closure Schedule: </b></p>
-                        <p class="nearbyWeather"><b>Area Weather: </b></p>
-                        <p class="templeComments"><b>Special Instructions: </b><br>To schedule an appointment for
-                            living ordinances, please call the temple.</p>
-                    </div>
-                </section>
+            <section id="temple1" lass="aboutTemples">
+                <div class="homePageImg">
+                    <figure><img src="./images/calgary.jpg" alt="Calgary Alberta Canada Temple">
+                        <figcaption>Calgary Alberta Canada</figcaption>
+                    </figure>
+                </div>
+                <div class="info">
+                    <h2 class="templeName">Calgary Alberta Temple</h2>
+                    <hr>
+                    <p class="templePhone"><b>Phone:</b> 403-241-4250</p>
+                    <p class="templeLocation"><b>Address:</b> 9802 Rocky Ridge Rd NW<br>
+                        Calgary AB T3G 5J7<br>
+                        Canada</p>
+                    <p class="templeServices"><b>Services: </b>Distribution center nearby</p>
+                    <p class="templeHistory"><b>History: </b>
+                        Announced: October 4, 2008<br>
+                        Groundbreaking: May 15, 2010<br>
+                        Dedicated: October 28, 2012</p>
+                    <p class="ordSchedule"><b>Ordinance Schedule: </b></p>
+                    <p class="sessionSchedule"><b>Session Schedule: </b></p>
+                    <p class="closeSchedule"><b>Closure Schedule: </b></p>
+                    <p class="nearbyWeather"><b>Area Weather: </b></p>
+                    <p class="templeComments"><b>Special Instructions: </b><br>To schedule an appointment for
+                        living ordinances, please call the temple.</p>
+                </div>
+                <div id="templeButton"><button class="button" id="next1">Next</button></div>
+            </section>
 
-                <section class="aboutTemples">
-                    <div class="homePageImg">
-                        <figure><img src="./images/saltLake.jpg" alt="Salt Lake Temple">
-                            <figcaption>Salt Lake, Utah</figcaption>
-                        </figure>
-                    </div>
-                    <div class="info">
-                        <h2 class="templeName">Salt Lake Temple</h2>
-                        <hr>
-                        <p class="templePhone"><b>Phone:</b> 801-240-2640</p>
-                        <p class="templeLocation"><b>Address:</b> 50 W North Temple St<br>
-                            Salt Lake City, UT 84150-9709</p>
-                        <p class="templeServices"><b>Services: </b>Clothing rental and Cafeteria available.
-                            Distribution center nearby</p>
-                        <p class="templeHistory"><b>History: </b>
-                            Announced: July 28, 1847<br>
-                            Groundbreaking: February 14, 1853<br>
-                            Dedicated: April 6, 1893</p>
-                        <p class="ordSchedule"><b>Ordinance Schedule: </b></p>
-                        <p class="sessionSchedule"><b>Session Schedule: </b></p>
-                        <p class="closeSchedule"><b>Closure Schedule from JSON: </b></p>
-                        <p class="nearbyWeather"><b>Area Weather: </b>Near Temple from API</p>
-                        <p class="templeComments"><b>Special Instructions: </b><br>Ordinances for family names must be
-                            done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination
-                            (males), initiatory, endowment, and then sealing. For additional help and information,
-                            please call the
-                            temple.</p>
-                    </div>
-                </section>
-                <section class="aboutTemples">
-                    <div class="homePageImg">
-                        <figure><img src="./images/losangeles.png" alt="Los Angeles California Temple">
-                            <figcaption>Los Angeles, California</figcaption>
-                        </figure>
-                    </div>
-                    <div class="info">
-                        <h2 class="templeName">Los Angeles California Temple</h2>
-                        <hr>
-                        <p class="templePhone"><b>Phone:</b> 310-474-5569</p>
-                        <p class="templeLocation"><b>Address:</b> 10777 Santa Monica Blvd<br>
-                            Los Angeles CA 90025-4718</p>
-                        <p class="templeServices"><b>Services: </b>Clothing rental, Cafeteria, and Patron Housing
-                            available.
-                            Distribution center nearby</p>
-                        <p class="templeHistory"><b>History: </b>
-                            Announced: March 6, 1937<br>
-                            Groundbreaking: September 22, 1951<br>
-                            Dedicated: March 11, 1956</p>
-                        <p class="ordSchedule"><b>Ordinance Schedule: </b></p>
-                        <p class="sessionSchedule"><b>Session Schedule: </b></p>
-                        <p class="closeSchedule"><b>Closure Schedule from JSON: </b></p>
-                        <p class="nearbyWeather"><b>Area Weather: </b>Near Temple from API</p>
-                        <p class="templeComments"><b>Special Instructions: </b><br>To schedule a group visit, please
-                            call the temple.</p>
-                    </div>
-                </section>
-                <section class="aboutTemples">
-                    <div class="homePageImg">
-                        <figure><img src="./images/mesa.jpg" alt="Mesa Arizona Temple">
-                            <figcaption>Mesa, Arizona</figcaption>
-                        </figure>
-                    </div>
-                    <div class="info">
-                        <h2 class="templeName">Mesa Arizona Temple</h2>
-                        <hr>
-                        <p class="templeLocation"><b>Address: </b>101 S LeSueur<br>
-                            Mesa, AZ 85204-1031</p>
-                        <p class="templeHistory"><b>History: </b>
-                            Announced: October 3, 1919<br>
-                            Groundbreaking: April 25, 1922<br>
-                            Dedicated: Originally dedicated on October 23, 1927 by Heber J. Grant</p>
-                        <p class="nearbyWeather"><b>Area Weather: </b>Near Temple from API</p>
-                        <p class="templeComments"><b>Special Instructions: </b><br>Temple closed for renovation.</p>
-                    </div>
-                </section>
-            </div>
-        </main>
+            <section id="temple2" class="aboutTemples">
+                <div class="homePageImg">
+                    <figure><img src="./images/saltLake.jpg" alt="Salt Lake Temple">
+                        <figcaption>Salt Lake, Utah</figcaption>
+                    </figure>
+                </div>
+                <div class="info">
+                    <h2 class="templeName">Salt Lake Temple</h2>
+                    <hr>
+                    <p class="templePhone"><b>Phone:</b> 801-240-2640</p>
+                    <p class="templeLocation"><b>Address:</b> 50 W North Temple St<br>
+                        Salt Lake City, UT 84150-9709</p>
+                    <p class="templeServices"><b>Services: </b>Clothing rental and Cafeteria available.
+                        Distribution center nearby</p>
+                    <p class="templeHistory"><b>History: </b>
+                        Announced: July 28, 1847<br>
+                        Groundbreaking: February 14, 1853<br>
+                        Dedicated: April 6, 1893</p>
+                    <p class="ordSchedule"><b>Ordinance Schedule: </b></p>
+                    <p class="sessionSchedule"><b>Session Schedule: </b></p>
+                    <p class="closeSchedule"><b>Closure Schedule from JSON: </b></p>
+                    <p class="nearbyWeather"><b>Area Weather: </b>Near Temple from API</p>
+                    <p class="templeComments"><b>Special Instructions: </b><br>Ordinances for family names must be
+                        done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination
+                        (males), initiatory, endowment, and then sealing. For additional help and information,
+                        please call the
+                        temple.</p>
+                </div>
+                <div id="templeButton"><button class="button" id="next2">Next</button></div>
+            </section>
+            <section id="temple3" class="aboutTemples">
+                <div class="homePageImg">
+                    <figure><img src="./images/losangeles.png" alt="Los Angeles California Temple">
+                        <figcaption>Los Angeles, California</figcaption>
+                    </figure>
+                </div>
+                <div class="info">
+                    <h2 class="templeName">Los Angeles California Temple</h2>
+                    <hr>
+                    <p class="templePhone"><b>Phone:</b> 310-474-5569</p>
+                    <p class="templeLocation"><b>Address:</b> 10777 Santa Monica Blvd<br>
+                        Los Angeles CA 90025-4718</p>
+                    <p class="templeServices"><b>Services: </b>Clothing rental, Cafeteria, and Patron Housing
+                        available.
+                        Distribution center nearby</p>
+                    <p class="templeHistory"><b>History: </b>
+                        Announced: March 6, 1937<br>
+                        Groundbreaking: September 22, 1951<br>
+                        Dedicated: March 11, 1956</p>
+                    <p class="ordSchedule"><b>Ordinance Schedule: </b></p>
+                    <p class="sessionSchedule"><b>Session Schedule: </b></p>
+                    <p class="closeSchedule"><b>Closure Schedule from JSON: </b></p>
+                    <p class="nearbyWeather"><b>Area Weather: </b>Near Temple from API</p>
+                    <p class="templeComments"><b>Special Instructions: </b><br>To schedule a group visit, please
+                        call the temple.</p>
+                </div>
+                <div id="templeButton"><button class="button" id="next3">Next</button></div>
+            </section>
 
-        <footer>
-            <div id="footerNav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                </ul>
-            </div>
-            <div id="copyright">All Content &copy; Temple Inn & Suites | Kirsten Naughton</div>
-        </footer>
-        <script src="scripts/script.js"></script>
+            <section id="temple4" class="aboutTemples">
+                <div class="homePageImg">
+                    <figure><img src="./images/mesa.jpg" alt="Mesa Arizona Temple">
+                        <figcaption>Mesa, Arizona</figcaption>
+                    </figure>
+                </div>
+                <div class="info">
+                    <h2 class="templeName">Mesa Arizona Temple</h2>
+                    <hr>
+                    <p class="templeLocation"><b>Address: </b>101 S LeSueur<br>
+                        Mesa, AZ 85204-1031</p>
+                    <p class="templeHistory"><b>History: </b>
+                        Announced: October 3, 1919<br>
+                        Groundbreaking: April 25, 1922<br>
+                        Dedicated: Originally dedicated on October 23, 1927 by Heber J. Grant</p>
+                    <p class="nearbyWeather"><b>Area Weather: </b>Near Temple from API</p>
+                    <p class="templeComments"><b>Special Instructions: </b><br>Temple closed for renovation.</p>
+                </div>
+                <div id="templeButton"><button class="button" id="next4">Next</button></div>
+            </section>
+
+            
+        </div>
+    </main>
+
+    <footer>
+        <div id="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </div>
+        <div id="copyright">All Content &copy; Temple Inn & Suites | Kirsten Naughton</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

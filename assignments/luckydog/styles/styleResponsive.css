@@ -153,6 +153,12 @@
     .button {
         margin-left: 20px;
     }
+
+    /****** temple page ********/
+    div.info {
+        width: 300px;
+    }
+    
     /********* SMALL SCREEN - FOOTER STYLES ***********/
 
     footer {
