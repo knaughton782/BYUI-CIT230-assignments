@@ -7,26 +7,7 @@ function hamburger() {
     }
 }
 
-var request = new XMLHttpRequest();
-var url = "./temples.json";
-
-request.open("GET", url, true);
-request.setRequestHeader("content-type", "application/jason");
-request.onreadystatechange = function() {
-    if (request.readyState == 4 && request.status == 200) {
-        var response = JSON.parse(request.responseText);
-    }
-}
-request.send();
-var output1 = document.getElementById("closeSchedule1");
-var output2 = document.getElementById("closeSchedule2");
-var output3 = document.getElementById("closeSchedule3");
-var output4 = document.getElementById("closeSchedule4");
-
-output1.innerHTML = url.closeSchedule1;
-
-
-$(document).ready(function() {
+$(document).ready(function () {
 
     var t1 = $("#temple1");
     var t2 = $("#temple2");
@@ -49,7 +30,7 @@ $(document).ready(function() {
     $('#next1').click(next1);
 
 
-//click on temple 2 page shows temple 3
+    //click on temple 2 page shows temple 3
     function next2() {
         t1.hide();
         t2.hide();
@@ -58,7 +39,7 @@ $(document).ready(function() {
     }
     $('#next2').click(next2);
 
-//to show temple 4
+    //to show temple 4
     function next3() {
         t1.hide();
         t2.hide();
@@ -67,7 +48,7 @@ $(document).ready(function() {
     }
     $('#next3').click(next3);
 
-//to show temple 1
+    //to show temple 1
     function next4() {
         t1.show();
         t2.hide();
@@ -77,3 +58,11 @@ $(document).ready(function() {
 
     $('#next4').click(next4);
 });
+
+var temples = './temples.json';
+
+var obj = JSON.parse(temples);
+console.log(temples);
+
+
+
