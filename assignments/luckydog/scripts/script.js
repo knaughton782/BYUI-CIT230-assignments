@@ -59,10 +59,22 @@ $(document).ready(function () {
     $('#next4').click(next4);
 });
 
-var temples = './temples.json';
+var output = document.getElementById('closeSchedule');
+var request = new XMLHttpRequest();
+var url = "https://knaughton782.github.io/assignments/luckydog/scripts/temples.json";
 
-var obj = JSON.parse(temples);
-console.log(temples);
+request.open("GET", url, true);
+request.setRequestHeader("content-type", "application/json");
+
+request.onreadystatechange = function () {
+    
+    if (request.readyState == 4 && request.status == 200) {
+        
+        var response = JSON.parse(request.responseText);
+        output.innerHTML = response.closeSchedule[0];
+    }
+}
+
 
 
 
