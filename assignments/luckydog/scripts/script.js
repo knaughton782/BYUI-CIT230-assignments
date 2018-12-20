@@ -1,3 +1,4 @@
+//hamburger menu
 function hamburger() {
     var x = document.getElementById("responsive");
     if (x.className === 'topnav') {
@@ -7,6 +8,8 @@ function hamburger() {
     }
 }
 
+
+//jquery content switching //////////////////
 $(document).ready(function () {
 
     var t1 = $("#temple1");
@@ -59,22 +62,21 @@ $(document).ready(function () {
     $('#next4').click(next4);
 });
 
+
+//////////// json section ///////////////////
 var output = document.getElementById('closeSchedule');
 var request = new XMLHttpRequest();
 var url = "https://knaughton782.github.io/assignments/luckydog/scripts/temples.json";
 
-request.open("GET", url, true);
-request.setRequestHeader("content-type", "application/json");
+
 
 request.onreadystatechange = function () {
-    
-    if (request.readyState == 4 && request.status == 200) {
-        
-        var response = JSON.parse(request.responseText);
-        output.innerHTML = response.closeSchedule[0];
+     if (request.readyState == 4 && request.status == 200) {
+            output.innerHTML = JSON.parse(request.responseText)[0];
     }
 }
-
+request.open("GET", url, true);
+request.send();
 
 
 
