@@ -228,8 +228,9 @@ input[type="radio"] {
     height: 25px;
     margin: 3px;
     width: 30px;
-    text-align: middle;
+    vertical-align: middle;
 }
+
 /******* contact page ************/
 .additionalInfo {
     margin: 25px 0;
@@ -261,6 +262,7 @@ div.imgDescription {
     max-width: 400px;
     margin: 20px 20px 20px 30px;
 }
+
 
 
 /********** services page ************/

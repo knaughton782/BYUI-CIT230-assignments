@@ -18,6 +18,25 @@
         margin-bottom: 50px;
     }
 
+    .makeReservation {
+        width: 200px;
+    }
+
+    div.homePageImg img {
+        padding: 5px;
+        width: 300px;
+    }
+
+    div.homePageImg {
+        margin: 10px 0 ;
+        float: none;
+    }
+
+    div.imgDescription {
+        float: none;
+        max-width: 300px;
+        margin: 25px;
+    }
 
     /*************** MEDIUM FOOTER ***************/
     footer {
@@ -60,7 +79,7 @@
 
     nav ul li {
         display: inline;
-        padding: 15px;
+        /* padding: 15px; */
     }
 
     /************ SMALL - RESPONSIVE TOP NAV **************/
@@ -119,7 +138,9 @@
     padding: 5px;
     max-width: 300px;
 }
-
+    .makeReservation {
+        width: 80%;
+    }
 
     /********* SMALL SCREEN - FOOTER STYLES ***********/
 
@@ -128,7 +149,7 @@
         bottom: 0;
         background-color: #6DABC8;
         margin-top: 40px;
-        width: 100%;
+        /* width: 100%; */
         text-align: center;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -136,7 +157,6 @@
 
     footer ul li {
         display: inline;
-        padding-right: 15px;
         color: #fff;
         font-family: "Playfair Display SC", serif;
         max-width: 300px;
@@ -155,7 +175,6 @@
         color: #fff;
         font-size: .5em;
         margin-top: 10px;
-        max-width: 300px;
         text-align: center;
     }
 
