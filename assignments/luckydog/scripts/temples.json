@@ -1,88 +1,17 @@
 {
     "temples": [
         {
-            "templeName": "Washington D.C. Temple",
-            "templePhone": "",
-            "templeEmail": "",
-            "templeLocation": "Kensington, Maryland, United States",
-            "templeServices": "",
-            "templeHistory": "",
-            "ordSchedule": "",
-            "sessionSchedule": "",
-            "closeSchedule": "",
-            "nearbyWeather": "",
-            "templePic": "",
-            "templeComments": "Currently closed for Renovation. Details will be updated upon reopening."
+            "closeSchedule": ""
         },
         {
-            "templeName": "Calgary Alberta Temple",
-            "templePhone": "(1) 403-241-4250",
-            "templeEmail": "Must be logged into LDS account to send email",
-            "templeLocation": "Kensington, Maryland, United States",
-            "templeServices": "No clothing rental available. No cafeteria available. No patron housing available. Distribution center nearby.",
-        "templeHistory": "Announced on October 4, 2008. Groundbreaking on May 15, 2010. Dedicated on October 28, 2012.",
-            "ordSchedule": "",
-            "sessionSchedule": "",
-            "closeSchedule": "2018: Tuesday, December 25, 2018 and Wednesday, December 26, 2018. 2019: Tuesday, January 1, 2019 and  Tuesday, April 16, 2019 - Monday, November 4, 2019 for cleaning and renovation.",
-            "nearbyWeather": "",
-            "templePic": "",
-            "templeComments": ""
+            "closeSchedule": ""
         },
         {
-            "templeName": "Mesa Arizona Temple",
-            "templePhone": "",
-            "templeEmail": "",
-            "templeLocation": "Mesa, Arizona, United States",
-            "templeServices": "",
-            "templeHistory": "",
-            "ordSchedule": "",
-            "sessionSchedule": "",
-            "closeSchedule": "",
-            "nearbyWeather": "",
-            "templePic": "",
-            "templeComments": "Currently closed for Renovation"
+            "closeSchedule": ""
         },
         {
-            "templeName": "Washington D.C. Temple",
-            "templePhone": "",
-            "templeEmail": "",
-            "templeLocation": "Kensington, Maryland, United States",
-            "templeServices": "",
-            "templeHistory": "",
-            "ordSchedule": "",
-            "sessionSchedule": "",
-            "closeSchedule": "",
-            "nearbyWeather": "",
-            "templePic": "",
-            "templeComments": "Currently closed for Renovation"
-        },
-        {
-            "templeName": "Washington D.C. Temple",
-            "templePhone": "",
-            "templeEmail": "",
-            "templeLocation": "Kensington, Maryland, United States",
-            "templeServices": "",
-            "templeHistory": "",
-            "ordSchedule": "",
-            "sessionSchedule": "",
-            "closeSchedule": "",
-            "nearbyWeather": "",
-            "templePic": "",
-            "templeComments": "Currently closed for Renovation"
-        },
-        {
-            "templeName": "Washington D.C. Temple",
-            "templePhone": "",
-            "templeEmail": "",
-            "templeLocation": "Kensington, Maryland, United States",
-            "templeServices": "",
-            "templeHistory": "",
-            "ordSchedule": "",
-            "sessionSchedule": "",
-            "closeSchedule": "",
-            "nearbyWeather": "",
-            "templePic": "",
-            "templeComments": "Currently closed for Renovation"
-        },
+            "closeSchedule": ""
+        }
+        
     ]
 }
