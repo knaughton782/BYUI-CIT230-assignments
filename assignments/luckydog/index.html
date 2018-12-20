@@ -18,6 +18,9 @@
     <div id="logo">
         <img src="./images/logo.png" alt="Temple Inn & Suites Logo">
     </div>
+    <div id="headerImg">
+        <img src="./images/hotel-night.jpg" alt="">
+    </div>
     <nav class="topnav" id="responsive">
         <ul>
             <a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a>
@@ -31,41 +34,48 @@
     </nav>
     <div class="clearfix"></div>
     <main>
-        site purpose: The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel
-        accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. The
-        owner-operated company caters to temple workers, patrons, and their families by providing specialized services and
-        accommodations that meet the needs of those patrons. The hotel accommodations and services are available to anyone
-        willing to abide by the terms and policies outlined by the company. The overall goal of the web site project is to
-        promote and provide information about the specialized services that this hotel chain offers to meet the needs of temple
-        patrons who come to serve in the temple or who participate in events such as sealings, weddings, receptions, and youth
-        trips. The website should reflect the Church culture and be designed to support a temple oriented theme as well as the
-        concept of being a haven of comfort and accessibility.
-        <section class="makeReservation">
-            <h2>Make a Reservation</h2>
-            <p>Information about making a reservation</p>
-            <button>I need a Reservation</button>
-        </section>
-        <section class="easyContact">
-            <h2>Have a Question?</h2>
-            <p>Easy contact information from home page</p>
-        
-        </section>
-        <section class="nearbyTemple">
-            <h2>Nearby Temple Information</h2>
-            <p>Information right here for nearby Temple</p>
-        </section>
-        <section class="highlightServices">
-            <h2>Highlight Services</h2>
-            <p>The service highlighted here. Consider json data</p>
-        </section>
-
-        <p>
-            The home page is a contemporary, exciting landing page providing images of temples and temple attending activities, and
-            must include:
-            a call to action to make a hotel reservation,
-            readily available navigation and contact information for the hotel chain, and
-            summary information about one temple.
-        </p>
+        <div class="flex-container">
+            <section>
+                <h2>Welcome to Temple Inn &amp; Suites</h2>
+                <div class="hotelRoomImg">
+                    <figure><img src="./images/hotelRoom.jpg" alt="A room at Temple Inn & Suites">
+                    <figcaption>Enjoy Our Restful Facilities</figcaption>
+                </figure>
+                </div>
+            </section>
+            <section class="nearbyTemple">
+                <h2>Nearby Temple Information</h2>
+                <p>Information right here for nearby Temple</p>
+            </section>
+            <section class="highlightServices">
+                <h2>Highlight Services</h2>
+                <p>The service highlighted here. Consider json data</p>
+            </section>
+            <section class="makeReservation">
+                <h2>Stay With Us!</h2>
+                <a href="reservations.html" class="button">I need a Reservation</a>
+                <br>
+                <hr>
+                <h2>Have a Question?</h2>
+                <p>Send us an email!<br><a href="mailto:questions@templeinn.com" class="button">questions@templeinn.com</a></p>
+            </section>
+    
+            <p>
+                The home page is a contemporary, exciting landing page providing images of temples and temple attending activities, and
+                must include:
+                a call to action to make a hotel reservation,
+                readily available navigation and contact information for the hotel chain, and
+                summary information about one temple. site purpose: The overall goal of the web site project is to
+                promote and provide information about the specialized services that this hotel chain offers to meet the needs of temple
+                patrons who come to serve in the temple or who participate in events such as sealings, weddings, receptions, and youth
+                trips. The website should reflect the Church culture and be designed to support a temple oriented theme as well as the
+                concept of being a haven of comfort and accessibility.
+            </p>
+            <section>
+                <h2>About Temple Inn &amp; Suites</h2>
+                <p>The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. The owner-operated company caters to temple workers, patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons. The hotel accommodations and services are available to anyone willing to abide by the terms and policies outlined by the company.</p>
+            </section>
+        </div>
     </main>
 
     <footer>

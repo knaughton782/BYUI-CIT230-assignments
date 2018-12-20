@@ -1,8 +1,8 @@
 /********** COLORS & FONTS ************/
 /*******************************
 
-Blue: #6DABC8 / rgb(24, 42, 170)
-Yellow: #FFD463 / rgb(109, 171, 100)
+Blue: #6DABC8 / rgb(109, 171, 200)
+Yellow: #FFD463 / rgb(255, 212, 99)
 Brown/Gold: #986E00 / rgb(152, 110, 0)
 Dark Grey: #313131 / rgb(49, 49, 49)
 
@@ -38,15 +38,25 @@ main {
     clear: both;
 }
 
-/********** GENERAL - LOGO STYLES ****************/
+/********** GENERAL - HEADER/LOGO STYLES ****************/
 #logo {
     margin: 25px 10% 35px 10%;
 }
 
 #logo img {
-    width: 330px;
+    width: 300px;
     float: right;
-    margin-bottom: 35px;
+    margin-top: 50px;
+    /* margin-bottom: 35px; */
+}
+
+#headerImg {
+    margin: 20px auto 20px 75px;
+}
+
+#headerImg img {
+    height: 200px;
+    border-radius: 5px;
 }
 
 /********** GENERAL - PRIMARY NAVIGATION ************/
@@ -109,8 +119,37 @@ h2 {
     margin-bottom: 10px;
 }
 
+.button {
+    margin: 20px 10px 20px 0;
+    padding: 10px;
+    background-color: #FFD463;
+    border: 1px solid #fcb93e;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: rgb(252, 197, 58);
+    color: #fff;
+}
+
+section {
+    margin: 20px 10px;
+}
+
+figure {
+    background-color: rgba(109, 171, 200, .5);
+}
+
+figcaption {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
 /******** embedded google map ***********/
- .map {
+.map {
     text-align: right;
     height: 400px;
     width: 350px;
@@ -126,10 +165,6 @@ h2 {
 /*********** GENERAL - FORM STYLES **********/
 fieldset {
     border: none;
-}
-
-.form {
-
 }
 
 form input {
@@ -152,12 +187,6 @@ fieldset {
     border-radius: 5px;
 }
 
-.button {
-    margin: 20px;
-    background-color: #FFD463;
-    border: 1px solid #fcb93e;
-}
-
 .thankYou {
     margin: 15px 0 0 35px;
     text-align: right;
@@ -165,9 +194,32 @@ fieldset {
     line-height: 150%;
 }
 
+.btnSpace {
+    margin-left: 30px;
+}
 /******* contact page ************/
 .additionalInfo {
     margin: 25px 0;
+}
+
+/********** home page ************/
+.makeReservation {
+    background-color: #f0efef;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 25px #4d4d4d;
+    margin: 0 0 25px 15px;
+}
+
+div.hotelRoomImg {
+    margin: 10px 0 ;
+
+}
+div.hotelRoomImg img {
+    border: 1px solid #313131;
+    padding: 5px;
+
 }
 
 /********* GENERAL - FLEXBOX STYLES ***********/
@@ -177,6 +229,8 @@ fieldset {
     justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
 }
 
 /********* GENERAL - FOOTER STYLES ***********/
@@ -184,6 +238,7 @@ fieldset {
 footer {
     position: fixed;
     bottom: 0;
+    left: 0;
     background-color: #6DABC8;
     margin-top: 40px;
     width: 100%;
