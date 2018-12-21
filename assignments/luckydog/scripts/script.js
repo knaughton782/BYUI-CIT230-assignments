@@ -65,6 +65,7 @@ $(document).ready(function () {
 
 //////////// json section ///////////////////
 //var output = document.getElementById('closeSchedule');
+var closeInfo = document.getElementById('closeSchedule');
 var request = new XMLHttpRequest();
 var url = "https://knaughton782.github.io/assignments/luckydog/scripts/temples.json";
 
@@ -72,10 +73,22 @@ var url = "https://knaughton782.github.io/assignments/luckydog/scripts/temples.j
 var request = new XMLHttpRequest();
 request.open("GET", url, true);
 request.onload = function() {
-    console.log(request.responseText);
-    var res = request.responseText;
+    //console.log(request.responseText);
+    var res = JSON.parse(request.responseText);
+    //console.log(res[0]);
+    
+    closeSchedule(res);
+
 };
 request.send();
+
+function closeSchedule(data) {
+    var test = "";
+    for (var i = 0; i < data.length; i++) {
+        test = data[i].closeSchedule;
+    }
+    closeInfo.insertAdjacentHTML('beforeend', test);
+}
 
 
 // request.onreadystatechange = function () {
