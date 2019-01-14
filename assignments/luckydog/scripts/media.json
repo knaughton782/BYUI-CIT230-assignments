@@ -1,0 +1,21 @@
+{"playlist": [
+    {
+        "songTitle": "Lucky.m4a",
+        "coverImg": "optional image goes here",
+        "artistName": "Jason Mraz",
+        "mediaUrl": "http://crazystupidtheory.com/media/Lucky.m4a"
+    },
+    {
+        "songTitle": "Hello.m4a",
+        "coverImg": "optional image goes here",
+        "artistName": "Adele",
+        "mediaUrl": "http://crazystupidtheory.com/media/Hello.m4a"
+    },
+    {
+        "songTitle": "Sugar.m4a",
+        "coverImg": "optional image goes here",
+        "artistName": "Maroon 5",
+        "mediaUrl": "http://crazystupidtheory.com/media/Sugar.m4a"
+    }
+]
+}
